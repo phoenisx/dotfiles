@@ -14,7 +14,7 @@ ZSH_THEME="random"
 # cause zsh load theme from this variable instead of
 # looking in ~/.oh-my-zsh/themes/
 # An empty array have no effect
-ZSH_THEME_RANDOM_CANDIDATES=( "cobalt2" "amuse" )
+ZSH_THEME_RANDOM_CANDIDATES=( "cobalt2" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -100,20 +100,21 @@ alias dcup="docker-compose up"
 alias dcupd="docker-compose up -d"
 alias dcstp="docker-compose stop"
 
-function dcexec() {
+function dexc() {
   docker exec -it $1 /bin/bash;
 }
-alias dcexc="dcexec";
 
-function dctail() {
-  docker exec -it $1 tail -f log/development.log;
+function dtf() {
+  $(echo "docker exec -it ${1} tail -f log/development.log");
 }
-alias dctail="dctail";
 
-function dcrestart() {
+function dlogsf() {
+  docker logs -f $1;
+}
+
+function drst() {
   docker restart $1
 }
-alias dcrsc="dcrestart";
 
 . `brew --prefix`/etc/profile.d/z.sh
 
