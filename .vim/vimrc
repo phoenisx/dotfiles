@@ -11,30 +11,30 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'vim-ruby/vim-ruby'
+" Plug 'vim-ruby/vim-ruby'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'   " needed by fugitive to browse the file on github/remote
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'tpope/vim-rails'
+" Plug 'tpope/vim-rails'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'chrisbra/csv.vim'
 Plug 'bronson/vim-trailing-whitespace'
-Plug 'Valloric/YouCompleteMe'
+" Plug 'Valloric/YouCompleteMe'
 Plug 'thaerkh/vim-workspace'
 Plug 'Yggdroot/indentLine'
 " Plug 'thaerkh/vim-indentguides'
 " Plug 'mhinz/vim-startify'
 " Plug 'vim-scripts/vim-auto-save'
-" Plug 'gabrielelana/vim-markdown'
+Plug 'gabrielelana/vim-markdown'
 " Plug 'chr4/nginx.vim' " plugin for nginx support. enable only when needed
 " Plug 'ngmy/vim-rubocop'
 " Plug 'majutsushi/tagbar'
 " Plug 'bronson/vim-visual-star-search'
-" Plug 'moll/vim-node'
+Plug 'moll/vim-node'
 " Plug 'JamshedVesuna/vim-markdown-preview'
 
 " On-demand loading
