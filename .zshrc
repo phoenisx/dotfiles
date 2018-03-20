@@ -68,8 +68,7 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -84,14 +83,11 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
+#####################################################################
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# Aliases for init Setup
+#
+#####################################################################
 alias dcps="docker-compose ps"
 alias dcpa="docker-compose ps -a"
 alias dimg="docker images"
@@ -115,6 +111,23 @@ function dlogsf() {
 function drst() {
   docker restart $1
 }
+
+
+#####################################################################
+#
+# Create Symlinks if not present
+#
+#####################################################################
+PATH_VSCODE="$HOME/Library/Application Support/Code/User/settings.json"; # MAC Path for VSCode Settings
+# $PATH_VSCODE="$HOME/.config/Code/User/settings.json"; # Linux Path for VSCode Setting
+PATH_ZSHRC="$HOME/.zshrc"
+if [ ! -L $PATH_VSCODE ] && [ ! -L $PATH_ZSHRC ]; then
+  echo "Symlinks Does not Exists, Creating them...";
+  ln -s ${HOME}/Subroto/dotfiles/.zshrc $PATH_ZSHRC;
+  ln -s ${HOME}/Subroto/dotfiles/vscode.json $PATH_VSCODE;
+else
+  echo "Symlinks Exists..."
+fi
 
 . `brew --prefix`/etc/profile.d/z.sh
 

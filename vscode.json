@@ -5,14 +5,17 @@
     "javascript.implicitProjectConfig.experimentalDecorators": true,
     "editor.fontSize": 12,
     "editor.tabSize": 2,
-
     "files.autoSave": "off",
     "files.autoSaveDelay": 1000,
-
-    // TSLint Specifics...
+    "editor.formatOnSave": true,
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
     "tslint.enable": true,
     "tslint.autoFixOnSave": true,
     "tslint.alwaysShowStatus": true,
-    "tslint.exclude": "polyfills.ts",
-    "workbench.colorTheme": "Default Light+"
+    "tslint.exclude": "polyfills.ts"
 }
