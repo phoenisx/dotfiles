@@ -51,7 +51,8 @@ Using Synaptics Manager Install `bcmwl-kernel-source`, for wireless network...
 * Generate SSH Key for Git
 	- Use Public Key for SSH for Gitlab
 	- Setup SSH Config for other remotes, [How To](https://www.digitalocean.com/community/tutorials/how-to-configure-custom-connection-options-for-your-ssh-client)
-* Install PowerLine Fonts, before proceeding...
+* Install PowerLine Fonts, before proceeding... Better use FiraCode, 
+  a much better Font for Development, also if used, enable Font Ligatures...
 
 ```shell
 cd
