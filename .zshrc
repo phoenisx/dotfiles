@@ -116,6 +116,11 @@ function codelint() {
  codeclimate analyze -e $1 $2 | grep -E $3;
 }
 
+function glcuser() {
+  git config --local --add user.name "Shub1427"
+  git config --local --add user.email "shub1493biswas@gmail.com"
+}
+
 # Doing Mac OSX Specific Tasks...
 if uname | grep -q "Darwin"; then
   . `brew --prefix`/etc/profile.d/z.sh
