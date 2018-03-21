@@ -1,0 +1,10 @@
+"*":
+  core:
+    telemetryConsent: "no"
+  editor:
+    fontFamily: "Fira Code"
+    fontSize: 12
+  "exception-reporting":
+    userId: "cdf1fbcc-d2bd-4280-bbaa-909c0dcb42ad"
+  welcome:
+    showOnStartup: false
