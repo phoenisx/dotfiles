@@ -1,10 +1,38 @@
 "*":
+  "bracket-matcher":
+    autocompleteCharacters: [
+      "()"
+      "[]"
+      "{}"
+      "\"\""
+      "''"
+      "``"
+      "“”"
+      "‘’"
+      "«»"
+      "‹›"
+      "__"
+      "**"
+      "~~"
+    ]
+    highlightMatchingLineNumber: true
   core:
+    disabledPackages: [
+      "spell-check"
+    ]
+    packagesWithKeymapsDisabled: []
+    projectHome: "/Users/subroto/Subroto"
     telemetryConsent: "no"
   editor:
     fontFamily: "Fira Code"
     fontSize: 12
+    preferredLineLength: 120
+    scrollPastEnd: true
+    showInvisibles: true
+    softWrap: true
   "exception-reporting":
     userId: "cdf1fbcc-d2bd-4280-bbaa-909c0dcb42ad"
+  "markdown-preview":
+    useGitHubStyle: true
   welcome:
     showOnStartup: false
