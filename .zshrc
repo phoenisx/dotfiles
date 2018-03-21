@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/subroto/.oh-my-zsh
+export ZSH=${HOME}/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -116,28 +116,12 @@ function codelint() {
  codeclimate analyze -e $1 $2 | grep -E $3;
 }
 
-#####################################################################
-#
-# Create Symlinks if not present
-#
-#####################################################################
-PATH_VSCODE="$HOME/Library/Application Support/Code/User/settings.json"; # MAC Path for VSCode Settings
-# $PATH_VSCODE="$HOME/.config/Code/User/settings.json"; # Linux Path for VSCode Setting
-PATH_ZSHRC="$HOME/.zshrc"
-PATH_ATOM="$HOME/.atom/config.cson"
-if [ ! -L $PATH_VSCODE ] && [ ! -L $PATH_ZSHRC ]; then
-  echo "Symlinks Does not Exists, Creating them...";
-  ln -s ${HOME}/Subroto/dotfiles/.zshrc $PATH_ZSHRC;
-  ln -s ${HOME}/Subroto/dotfiles/vscode.json $PATH_VSCODE;
-  rm ${PATH_ATOM} #Remove if already present...
-  ln -s ${HOME}/Subroto/dotfiles/atom.cson $PATH_VSCODE;
-else
-  echo "Symlinks Exists..."
+# Doing Mac OSX Specific Tasks...
+if uname | grep -q "Darwin"; then
+  . `brew --prefix`/etc/profile.d/z.sh
+  export PATH="/usr/local/opt/node@8/bin:$PATH"
+
+  test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 fi
 
-. `brew --prefix`/etc/profile.d/z.sh
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export PATH="/usr/local/opt/node@8/bin:$PATH"
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
