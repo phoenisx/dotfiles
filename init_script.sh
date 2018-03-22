@@ -35,5 +35,5 @@ fi
 # Download and Install Atom Packages
 #
 #####################################################################
-$(apm install copy-path file-icons highlight-selected local-history related set-syntax atom-wrap-in-tag atom-ternjs autoclose-html autocomplete-modules docblockr emmet emmet-jsx-css-modules es6-javascript js-hyperclick hyperclick tree-view-copy-relative-path
+$(apm install atom-import-js copy-path file-icons highlight-selected local-history related set-syntax atom-wrap-in-tag atom-ternjs autoclose-html autocomplete-modules docblockr emmet emmet-jsx-css-modules es6-javascript js-hyperclick hyperclick tree-view-copy-relative-path
 language-babel react-es7-snippets atom-jest-snippets);
