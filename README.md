@@ -9,6 +9,7 @@ This repo contains custom **vim**, **nvim**, **atom**, **vscode** and **zsh** co
 	- Theme used for terminal is a customized version of [Cobalt2-iterm](https://github.com/wesbos/Cobalt2-iterm).
 	- Colorscheme used for terminal is `AfterGlow`, [All OMZ themes](https://github.com/mbadolato/iTerm2-Color-Schemes)
 	- Set Font Style to [FiraCode](https://github.com/tonsky/FiraCode), also enable _font-ligatures_ in iterm2 for MacOSX.
+	- Use `Plug Install` to install all the Plugins for `vim`.
 - `git_template` directory has the hooks for ctags, i.e. post_commit, post_checkout etc. Create symlink in your home directory to this directory.
 - Setting up ctags for vim:
 ```
@@ -96,11 +97,6 @@ mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 * Teminal Setup:
 	- [Silver Searcher](https://github.com/ggreer/the_silver_searcher)
 	- [Fuzzy Search](https://github.com/junegunn/fzf)
-	- Use Shubham's Cobalt2 Theme, _Paste it to ~/.oh-my-zsh/themes_, and change theme to cobalt2.
-* Setting Up `vim`:
-	- Clone Shubham's [Repo](https://github.com/snkshukla/dotfiles)
-	- Copy .vim folder to ~/, and make necessary changes to install only required plugins in VIM
-	- `PlugInstall` in `vim`
 
 * Setting Eclipse Color Themes
 	- Make theme to Dark
