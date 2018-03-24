@@ -95,6 +95,7 @@ alias dia="docker images -a"
 alias dcup="docker-compose up"
 alias dcupd="docker-compose up -d"
 alias dcstp="docker-compose stop"
+alias dsta="docker stats --all"
 
 function dexc() {
   docker exec -it $1 /bin/bash;

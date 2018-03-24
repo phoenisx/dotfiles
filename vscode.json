@@ -20,5 +20,10 @@
     "tslint.enable": true,
     "tslint.autoFixOnSave": true,
     "tslint.alwaysShowStatus": true,
-    "tslint.exclude": "polyfills.ts"
+    "tslint.exclude": "polyfills.ts",
+    "editor.autoIndent": false,
+    "sublimeTextKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "editor.formatOnPaste": true
 }
