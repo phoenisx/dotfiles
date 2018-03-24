@@ -16,7 +16,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rhubarb'   " needed by fugitive to browse the file on github/remote
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-" Plug 'tpope/vim-rails'
+Plug 'tpope/vim-rails'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-surround'
 Plug 'vim-airline/vim-airline'

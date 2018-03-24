@@ -1,3 +1,8 @@
+#! /bin/bash
+
+# Run the Following cmd to regenerate this file...
+# for ext in $(code --list-extensions); do; echo "code --install-extension ${ext}"; done > vscode_init_extensions.sh
+
 code --install-extension CraigMaslowski.erb
 code --install-extension castwide.solargraph
 code --install-extension christian-kohler.npm-intellisense
@@ -17,3 +22,4 @@ code --install-extension waderyan.gitblame
 code --install-extension wayou.vscode-todo-highlight
 code --install-extension xabikos.JavaScriptSnippets
 code --install-extension xabikos.ReactSnippets
+
