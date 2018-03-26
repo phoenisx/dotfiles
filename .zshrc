@@ -127,7 +127,12 @@ if uname | grep -q "Darwin"; then
   . `brew --prefix`/etc/profile.d/z.sh
   export PATH="/usr/local/opt/node@8/bin:$PATH"
 
+  function rstBlu() {
+    sudo kextunload -b com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport
+    sudo kextload -b com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport
+  }
   test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 fi
+# Mac Specific Aliases and Commands...
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
