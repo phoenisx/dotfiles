@@ -114,7 +114,10 @@ function drst() {
 }
 
 function codelint() {
- codeclimate analyze -e $1 $2 | grep -E $3;
+  x=$(for ii in $(seq $3 $4); do; echo -en "${ii},"; done;)
+  echo "${1}, ${2}, ${x}";
+  echo "codeclimate analyze -e $1 $2 | grep -E $x;";
+#  codeclimate analyze -e $1 $2 | grep -E $x;
 }
 
 function glcuser() {
