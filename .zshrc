@@ -89,24 +89,22 @@ export LANG=en_US.UTF-8
 #
 #####################################################################
 alias dcps="docker-compose ps"
-alias dcpa="docker-compose ps -a"
+alias dcpss="docker-compose ps --services";
 alias dimg="docker images"
 alias dia="docker images -a"
 alias dcup="docker-compose up"
 alias dcupd="docker-compose up -d"
 alias dcstp="docker-compose stop"
 alias dsta="docker stats --all"
+alias dclf="docker-compose logs -f";
+alias dexit="docker exec -it"
 
-function dexc() {
+function dbash() {
   docker exec -it $1 /bin/bash;
 }
 
 function dtf() {
   $(echo "docker exec -it ${1} tail -f log/development.log");
-}
-
-function dlogsf() {
-  docker logs -f $1;
 }
 
 function drst() {
