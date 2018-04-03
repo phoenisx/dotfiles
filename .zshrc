@@ -97,6 +97,7 @@ alias dcupd="COMPOSE_HTTP_TIMEOUT=10000 ddocker-compose up -d"
 alias dcstp="docker-compose stop"
 alias dsta="docker stats --all"
 alias dclf="COMPOSE_HTTP_TIMEOUT=10000 docker-compose logs -f";
+alias dcltf="COMPOSE_HTTP_TIMEOUT=10000 docker-compose logs --tail=30 -f";
 alias dexit="docker exec -it"
 
 function dbash() {
