@@ -92,11 +92,11 @@ alias dcps="docker-compose ps"
 alias dcpss="docker-compose ps --services";
 alias dimg="docker images"
 alias dia="docker images -a"
-alias dcup="docker-compose up"
-alias dcupd="docker-compose up -d"
+alias dcup="COMPOSE_HTTP_TIMEOUT=10000 ddocker-compose up"
+alias dcupd="COMPOSE_HTTP_TIMEOUT=10000 ddocker-compose up -d"
 alias dcstp="docker-compose stop"
 alias dsta="docker stats --all"
-alias dclf="docker-compose logs -f";
+alias dclf="COMPOSE_HTTP_TIMEOUT=10000 docker-compose logs -f";
 alias dexit="docker exec -it"
 
 function dbash() {
@@ -112,9 +112,18 @@ function drst() {
 }
 
 function codelint() {
-  x=$(for ii in $(seq $3 $4); do; echo -en "${ii},"; done;)
-  echo "${1}, ${2}, ${x}";
-  echo "codeclimate analyze -e $1 $2 | grep -E $x;";
+    if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]; then
+    echo "Usage: \`codelint \${FILE_PATH} \${UPPER_LINENUM_BOUND} \${LOWER_LINENUM_BOUND} [\${LINT_ENGINE}]\`";
+    return;
+  fi
+  x=$(for ii in $(seq $2 $3); do; echo -en "${ii},"; done;)
+  linter="";
+  if [ -z "$4" ]; then
+    linter="";
+  else
+    linter="-e "$4
+  fi
+  $(echo -en "codeclimate analyze ${linter} $1 | grep -E \"$x\"");
 #  codeclimate analyze -e $1 $2 | grep -E $x;
 }
 
