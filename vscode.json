@@ -14,13 +14,6 @@
     "emmet.triggerExpansionOnTab": true,
     "editor.fontLigatures": true,
     "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
-    "eslint.autoFixOnSave": true,
-    "eslint.enable": true,
-    "eslint.alwaysShowStatus": true,
-    "tslint.enable": true,
-    "tslint.autoFixOnSave": true,
-    "tslint.alwaysShowStatus": true,
-    "tslint.exclude": "polyfills.ts",
     "editor.autoIndent": false,
     "sublimeTextKeymap.promptV3Features": true,
     "editor.multiCursorModifier": "ctrlCmd",
@@ -28,5 +21,14 @@
     "editor.formatOnPaste": true,
     "autoimport.filesToScan": "**/*.{js,jsx,css,jpg,png,ts,tsx}",
     "autoimport.autoComplete": true,
-
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
 }

@@ -92,8 +92,8 @@ alias dcps="docker-compose ps"
 alias dcpss="docker-compose ps --services";
 alias dimg="docker images"
 alias dia="docker images -a"
-alias dcup="COMPOSE_HTTP_TIMEOUT=10000 ddocker-compose up"
-alias dcupd="COMPOSE_HTTP_TIMEOUT=10000 ddocker-compose up -d"
+alias dcup="COMPOSE_HTTP_TIMEOUT=10000 docker-compose up"
+alias dcupd="COMPOSE_HTTP_TIMEOUT=10000 docker-compose up -d"
 alias dcstp="docker-compose stop"
 alias dsta="docker stats --all"
 alias dclf="COMPOSE_HTTP_TIMEOUT=10000 docker-compose logs -f";
@@ -133,6 +133,15 @@ function glcuser() {
   git config --local --add user.email "shub1493biswas@gmail.com"
 }
 
+
+##############################################################################
+#
+# Environment Variables...
+#
+##############################################################################
+
+GEM_FILE=${HOME}/.gem
+
 # Doing Mac OSX Specific Tasks...
 if uname | grep -q "Darwin"; then
   . `brew --prefix`/etc/profile.d/z.sh
@@ -143,6 +152,7 @@ if uname | grep -q "Darwin"; then
     sudo kextload -b com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport
   }
   test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+  eval "$(rbenv init -)"
 fi
 # Mac Specific Aliases and Commands...
 
