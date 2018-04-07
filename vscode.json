@@ -2,7 +2,7 @@
     "window.zoomLevel": -1,
     "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
     "editor.fontLigatures": true,
-    "editor.fontSize": 16,
+    "editor.fontSize": 15,
     "editor.fontWeight": "400",
     "editor.lineHeight": 20,
     "editor.letterSpacing": 0,
@@ -67,4 +67,5 @@
         "suppressShowKeyBindingsNotice": true
     },
     "typescript.tsdk": "node_modules/typescript/lib",
+    "editor.insertSpaces": true,
 }
