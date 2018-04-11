@@ -99,6 +99,9 @@ alias dsta="docker stats --all"
 alias dclf="COMPOSE_HTTP_TIMEOUT=10000 docker-compose logs -f";
 alias dcltf="COMPOSE_HTTP_TIMEOUT=10000 docker-compose logs --tail=30 -f";
 alias dexit="docker exec -it"
+alias dcupdate="docker-compose pull && docker-compose build"
+alias drst="docker restart"
+alias dcrst="docker-compose restart"
 
 function dbash() {
   docker exec -it $1 /bin/bash;
@@ -106,10 +109,6 @@ function dbash() {
 
 function dtf() {
   $(echo "docker exec -it ${1} tail -f log/development.log");
-}
-
-function drst() {
-  docker restart $1
 }
 
 function codelint() {
