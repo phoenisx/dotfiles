@@ -41,7 +41,7 @@
     "[javascript]": {
         "editor.formatOnSave": false
     },
-    "workbench.colorTheme": "Cobalt2",
+    "workbench.colorTheme": "Default Dark+",
     "workbench.editor.tabCloseButton": "off",
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"
@@ -54,8 +54,6 @@
     "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
     "eslint.autoFixOnSave": true,
     "eslint.alwaysShowStatus": true,
-    "autoimport.filesToScan": "**/*.{js,jsx,css,jpg,png,ts,tsx}",
-    "autoimport.autoComplete": true,
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
@@ -68,4 +66,15 @@
     },
     "typescript.tsdk": "node_modules/typescript/lib",
     "editor.insertSpaces": true,
+    "eslint.options": {
+        "config": "./.eslintrc"
+    },
+    "eslint.workingDirectories": [
+        "./"
+    ],
+    "explorer.confirmDragAndDrop": false,
+    "path-intellisense.mappings": {
+        "/": "${workspaceRoot}",
+        "components": "${workspaceRoot}/src/components",
+    }
 }
