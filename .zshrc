@@ -102,6 +102,9 @@ alias dexit="docker exec -it"
 alias dcupdate="docker-compose pull && docker-compose build"
 alias drst="docker restart"
 alias dcrst="docker-compose restart"
+alias dcmod="COMPOSE_HTTP_TIMEOUT=10000 docker-compose -f docker-compose.yml -f modportal/docker-compose.yml"
+
+alias dftot="df -ahH --total"
 
 function dbash() {
   docker exec -it $1 /bin/bash;
@@ -140,6 +143,8 @@ function glcuser() {
 ##############################################################################
 
 GEM_FILE=${HOME}/.gem
+BTT_SRC=${HOME}/src/btt/ehq
+SHUB_SRC=${HOME}/Subroto
 
 # Doing Mac OSX Specific Tasks...
 if uname | grep -q "Darwin"; then

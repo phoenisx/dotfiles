@@ -8,14 +8,9 @@
     "editor.letterSpacing": 0,
     "workbench.editor.tabSizing": "shrink",
     "editor.tabSize": 2,
-    "editor.cursorStyle": "line",
     "editor.wordWrap": "on",
-    "editor.multiCursorModifier": "ctrlCmd",
     "editor.cursorBlinking": "solid",
     "editor.colorDecorators": false,
-    "editor.minimap.enabled": false,
-    "editor.minimap.showSlider": "always",
-    "explorer.confirmDelete": false,
     "workbench.activityBar.visible": true,
     "workbench.statusBar.feedback.visible": false,
     "workbench.sideBar.location": "left",
@@ -35,25 +30,11 @@
         "**/.DS_Store": true,
         "**/.next": true
     },
-    "files.autoSave": "off",
-    "files.autoSaveDelay": 1000,
-    "editor.formatOnSave": true,
-    "[javascript]": {
-        "editor.formatOnSave": false
-    },
-    "workbench.colorTheme": "Default Dark+",
     "workbench.editor.tabCloseButton": "off",
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
-    "emmet.triggerExpansionOnTab": true,
     "editor.autoIndent": false,
     "editor.snippetSuggestions": "top",
-    "editor.formatOnPaste": true,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
-    "eslint.autoFixOnSave": true,
-    "eslint.alwaysShowStatus": true,
     "gitlens.advanced.messages": {
         "suppressCommitHasNoPreviousCommitWarning": false,
         "suppressCommitNotFoundWarning": false,
@@ -64,17 +45,12 @@
         "suppressResultsExplorerNotice": false,
         "suppressShowKeyBindingsNotice": true
     },
-    "typescript.tsdk": "node_modules/typescript/lib",
     "editor.insertSpaces": true,
-    "eslint.options": {
-        "config": "./.eslintrc"
-    },
-    "eslint.workingDirectories": [
-        "./"
-    ],
     "explorer.confirmDragAndDrop": false,
     "path-intellisense.mappings": {
         "/": "${workspaceRoot}",
         "components": "${workspaceRoot}/src/components",
-    }
+    },
+    "gitlens.historyExplorer.enabled": true,
+    "explorer.confirmDelete": false
 }
