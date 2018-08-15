@@ -10,7 +10,7 @@
     "editor.tabSize": 2,
     "editor.wordWrap": "on",
     "editor.cursorBlinking": "solid",
-    "editor.colorDecorators": false,
+    "editor.colorDecorators": true,
     "workbench.activityBar.visible": true,
     "workbench.statusBar.feedback.visible": false,
     "workbench.sideBar.location": "left",
@@ -52,5 +52,6 @@
         "components": "${workspaceRoot}/src/components",
     },
     "gitlens.historyExplorer.enabled": true,
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "editor.minimap.enabled": false
 }

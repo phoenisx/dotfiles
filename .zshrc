@@ -69,7 +69,7 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-export LANG=en_US.UTF-8
+# export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -161,4 +161,9 @@ if uname | grep -q "Darwin"; then
 fi
 # Mac Specific Aliases and Commands...
 
+# Arch Linux Specific Path, for FZF...
+[ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
+[ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
 
+
+source /usr/share/nvm/init-nvm.sh
