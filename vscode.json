@@ -53,5 +53,7 @@
     },
     "gitlens.historyExplorer.enabled": true,
     "explorer.confirmDelete": false,
-    "editor.minimap.enabled": false
+    "editor.minimap.enabled": false,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true
 }
