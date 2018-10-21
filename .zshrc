@@ -157,13 +157,15 @@ if uname | grep -q "Darwin"; then
     sudo kextload -b com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport
   }
   test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-  eval "$(rbenv init -)"
+else
+  # Arch Linux Specific Path, for FZF...
+  [ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
+  [ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
 fi
-# Mac Specific Aliases and Commands...
-
-# Arch Linux Specific Path, for FZF...
-[ -f /usr/share/fzf/key-bindings.zsh ] && source /usr/share/fzf/key-bindings.zsh
-[ -f /usr/share/fzf/completion.zsh ] && source /usr/share/fzf/completion.zsh
 
 
-source /usr/share/nvm/init-nvm.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

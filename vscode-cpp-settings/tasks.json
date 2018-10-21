@@ -1,0 +1,35 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  // Important Variables list
+  // - https://code.visualstudio.com/docs/editor/variables-reference
+  // This Tasks file helps to build Single CPP file and Run it in Console
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build CPP File",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-Wall",
+        "-ansi",
+        "${file}",
+        "-o",
+        "${fileBasenameNoExtension}"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Run CPP Output File",
+      "type": "shell",
+      "command": "${workspaceFolder}/${fileBasenameNoExtension}",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    }
+  ]
+}

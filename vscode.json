@@ -55,5 +55,7 @@
     "explorer.confirmDelete": false,
     "editor.minimap.enabled": false,
     "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "eslint.alwaysShowStatus": true,
+    "javascript.updateImportsOnFileMove.enabled": "prompt"
 }
