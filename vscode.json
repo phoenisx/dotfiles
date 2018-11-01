@@ -57,5 +57,7 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "eslint.alwaysShowStatus": true,
-    "javascript.updateImportsOnFileMove.enabled": "prompt"
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "standard.enable": false,
+    "workbench.colorTheme": "Solarized Light"
 }
