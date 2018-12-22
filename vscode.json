@@ -57,7 +57,15 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "eslint.alwaysShowStatus": true,
-    "javascript.updateImportsOnFileMove.enabled": "always",
     "standard.enable": false,
-    "workbench.colorTheme": "Solarized Light"
+    "window.titleBarStyle": "custom",
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false,
+        "markdown": true
+    },
+    "gitlens.views.fileHistory.enabled": true,
+    "gitlens.views.lineHistory.enabled": true,
+    "javascript.updateImportsOnFileMove.enabled": "always"
 }

@@ -107,6 +107,12 @@ alias dcmod="COMPOSE_HTTP_TIMEOUT=10000 docker-compose -f docker-compose.yml -f 
 
 alias dftot="df -ahH --total"
 
+# NPM Aliases
+alias npi="npm install"
+alias npr="npm run"
+alias npu="npm uninstall"
+alias npls="npm list"
+
 function dbash() {
   docker exec -it $1 /bin/bash;
 }
@@ -146,6 +152,11 @@ function glcuser() {
 GEM_FILE=${HOME}/.gem
 BTT_SRC=${HOME}/src/btt/ehq
 SHUB_SRC=${HOME}/Subroto
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # Doing Mac OSX Specific Tasks...
 if uname | grep -q "Darwin"; then
