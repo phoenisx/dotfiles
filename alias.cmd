@@ -172,3 +172,10 @@ doskey gupav=git pull --rebase --autostash -v
 doskey glum=git pull upstream master
 
 doskey gwch=git whatchanged -p --abbrev-commit --pretty=medium
+
+:: Listing Aliases, for cmder (ConEmu)
+:: Since ls doesn't work on cmd
+
+doskey la=ls -a --color
+doskey ll=ls -l --color
+doskey lla=ls -la --color
