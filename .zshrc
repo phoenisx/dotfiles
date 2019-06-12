@@ -65,11 +65,16 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
+export FZF_BASE="$HOME/.fzf"
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# export LANG=en_US.UTF-8
+# Required by Tmux as well
+export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+# export LANG=nl_NL.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
