@@ -157,11 +157,11 @@ function glcuser() {
 GEM_FILE=${HOME}/.gem
 BTT_SRC=${HOME}/src/btt/ehq
 SHUB_SRC=${HOME}/Subroto
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
+export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 
 # Doing Mac OSX Specific Tasks...
 if uname | grep -q "Darwin"; then
