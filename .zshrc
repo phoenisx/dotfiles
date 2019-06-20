@@ -158,10 +158,12 @@ GEM_FILE=${HOME}/.gem
 BTT_SRC=${HOME}/src/btt/ehq
 SHUB_SRC=${HOME}/Subroto
 export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+export PATH=$(pyenv root)/shims:$PATH
 
 # Doing Mac OSX Specific Tasks...
 if uname | grep -q "Darwin"; then
@@ -185,3 +187,7 @@ fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+
+export CHROME_BIN=/usr/bin/chromium-browser
+
