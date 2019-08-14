@@ -67,7 +67,7 @@ URxvt*letterSpace:                -1
 !! terminus names see end of file!
 
 URxvt.depth:                      32
-URxvt.background:                 [100]#222D31
+URxvt.background:                 [100]#212121
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
 URxvt*cursorBlink:                true
@@ -237,5 +237,5 @@ URxvt.keysym.Shift-Control-Down:  \033[1;6B
 ! -xos4-terminus-bold-r-normal--28-280-72-72-c-140-iso10646-1
 ! -xos4-terminus-bold-r-normal--32-320-72-72-c-160-iso10646-1
 
-#include "/home/subroto/Xresources-themes/iterm-ayu.Xresources"
+#include "/home/subroto/Xresources-themes/iterm-Afterglow.Xresources"
 
