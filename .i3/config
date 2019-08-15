@@ -194,6 +194,7 @@ bindsym $mod+Shift+9 move container to workspace $ws8; workspace $ws9
 # assign [class="Skype"] $ws5
 assign [class="firefox"] $ws2
 assign [class="URxvt"] $ws1
+assign [class="Code"] $ws3
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
@@ -222,6 +223,7 @@ for_window [class="Skype"] floating enable border normal
 for_window [class="Timeset-gui"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Xfburn"] floating enable
+for_window [class="Gucharmap"] floating enable
 # Firefox specific Floating Windows
 for_window [window_role="Organizer"] floating enable
 # NVidia Specific Floating Windows
@@ -330,35 +332,6 @@ set_from_resource $term_color13    color13
 set_from_resource $term_color14    color14
 set_from_resource $term_color15    color15
 
-# Start i3bar to display a workspace bar (plus the system information i3status if available)
-bar {
-	i3bar_command i3bar
-	status_command i3status
-	position bottom
-
-## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
-#	tray_output primary
-#	tray_output eDP1
-
-	bindsym button4 nop
-	bindsym button5 nop
-#   font xft:URWGothic-Book 11
-	strip_workspace_numbers yes
-
-    colors {
-        background #222D31
-        statusline #F9FAF9
-        separator  #454947
-
-#                      border  backgr. text
-        focused_workspace  #F9FAF9 #16a085 #292F34
-        active_workspace   #595B5B #353836 #FDF6E3
-        inactive_workspace #595B5B #222D31 #EEE8D5
-        binding_mode       #16a085 #2C2C2C #F9FAF9
-        urgent_workspace   #16a085 #FDF6E3 #E5201D
-    }
-}
-
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
 
@@ -429,6 +402,7 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
+exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec firefox
 exec --no-startup-id /usr/lib/geoclue-2.0/demos/agent
 exec --no-startup-id redshift-gtk

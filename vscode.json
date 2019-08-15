@@ -1,11 +1,11 @@
 {
   "window.zoomLevel": 1,
-  "editor.fontFamily": "Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Hasklug Nerd Font, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 15,
   "editor.fontWeight": "400",
   "editor.lineHeight": 20,
-  "editor.letterSpacing": 0,
+  "editor.letterSpacing": -1,
   "workbench.editor.tabSizing": "shrink",
   "editor.wordWrap": "on",
   "editor.cursorBlinking": "solid",
