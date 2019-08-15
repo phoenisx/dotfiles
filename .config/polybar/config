@@ -27,14 +27,14 @@
 
 	bottom = false
 
-	background = ${xrdb:background}
-	foreground = ${xrdb:color7}
+	background = ${colors.background}
+	foreground = ${colors.foreground}
 
 	border-bottom-size  = 0
 	border-top-size     = 0
 
-	border-left-size  = 300
-	border-right-size = 300
+	border-left-size  = 0
+	border-right-size = 0
 
 	border-bottom-color = #ffffff
 	border-top-color    = #000f0f0f
@@ -43,14 +43,14 @@
 	border-right-color = #000f0f0f
 
 	spacing            = 0
-	padding-left       = 0
-	padding-right      = 0
+	padding-left       = 5
+	padding-right      = 5
 	module-margin-left = 0
 
-	font-N = <fontconfig pattern>;<vertical offset>
+;font-N = <fontconfig pattern>;<vertical offset>
 	font-0 = Fura Code Nerd Font:size=4;2
-	font-1 = Inconsolata LGC Nerd Font:pixelsize=10;1
-	font-2 = Hack Nerd Font:size=4;1
+	font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
+  font-2 = siji:pixelsize=10;1
 
 	modules-left   = volume xwindow
 	modules-center = i3
@@ -66,7 +66,7 @@
   type = internal/alsa
 
   format-volume = <label-volume> <bar-volume>
-  label-volume = VOL
+  label-volume = 
   label-volume-foreground = ${root.foreground}
 
   format-muted-prefix = " "
@@ -80,14 +80,17 @@
   bar-volume-foreground-3 = #55aa55
   bar-volume-foreground-4 = #55aa55
   bar-volume-foreground-5 = #f5a70a
-  bar-volume-foreground-6 = #ff5555
+  bar-volume-foreground-6 = #f5a70a
+  bar-volume-foreground-7 = #f5a70a
+  bar-volume-foreground-8 = #f5a70a
+  bar-volume-foreground-9 = #ff5555
   bar-volume-gradient = false
-  bar-volume-indicator = |
-  bar-volume-indicator-font = 3
+  bar-volume-indicator = 
+  bar-volume-indicator-font = 2
   bar-volume-fill = ─
   bar-volume-fill-font = 2
   bar-volume-empty = ─
-  bar-volume-empty-font = 3
+  bar-volume-empty-font = 2
   bar-volume-empty-foreground = ${colors.foreground-alt}
 
 [module/xwindow]
@@ -144,8 +147,8 @@
 	format         = <label>
 	format-padding = 0
 
-	label-background = ${xrdb:color0}
-	label-foreground = ${xrdb:color7}
+	label-background = ${colors.background}
+	label-foreground = ${colors.foreground}
 	label-padding    = 1
 
 ;[module/xwindow]
