@@ -44,8 +44,8 @@
 	border-right-color = #000f0f0f
 
 	spacing            = 0
-	padding-left       = 5
-	padding-right      = 5
+	padding-left       = 2
+	padding-right      = 2
 	module-margin      = 1
 
   ; Under-/overline pixel size and argb color
@@ -59,9 +59,9 @@
 	font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
   font-2 = siji:pixelsize=10;1
 
-	modules-left   = volume xwindow
+	modules-left   = wlan volume 
 	modules-center = i3
-	modules-right  = cpu memory wlan temperature date
+	modules-right  = cpu memory temperature date
 
 	fixed-center = true
 
@@ -70,35 +70,15 @@
 ;--------------------------------------------------
 
 [module/volume]
-  type = internal/alsa
+  type = internal/pulseaudio
 
-  format-volume = <label-volume> <bar-volume>
-  label-volume = 
-  label-volume-foreground = ${root.foreground}
+  format-volume = <ramp-volume><label-volume>
+  format-muted = 0%
 
-  format-muted-prefix = " "
-  format-muted-foreground = ${colors.foreground}
-  label-muted = sound muted
-
-  bar-volume-width = 5
-  bar-volume-foreground-0 = #55aa55
-  bar-volume-foreground-1 = #55aa55
-  bar-volume-foreground-2 = #55aa55
-  bar-volume-foreground-3 = #55aa55
-  bar-volume-foreground-4 = #55aa55
-  bar-volume-foreground-5 = #f5a70a
-  bar-volume-foreground-6 = #f5a70a
-  bar-volume-foreground-7 = #f5a70a
-  bar-volume-foreground-8 = #f5a70a
-  bar-volume-foreground-9 = #ff5555
-  bar-volume-gradient = false
-  bar-volume-indicator = 
-  bar-volume-indicator-font = 2
-  bar-volume-fill = ─
-  bar-volume-fill-font = 2
-  bar-volume-empty = ─
-  bar-volume-empty-font = 2
-  bar-volume-empty-foreground = ${colors.foreground-alt}
+  ramp-volume-0 = 
+  ramp-volume-1 = 
+  ramp-volume-2 = 
+  ramp-volume-foreground = ${colors.primary}
 
 [module/xwindow]
 	y-offset      = 10
@@ -117,6 +97,8 @@
   ws-icon-0 = 1;
   ws-icon-1 = 2;
   ws-icon-2 = 3;
+  ws-icon-3 = 4;辶
+  ws-icon-4 = 5;ﭧ
 
   label-mode-padding = 2
   label-mode-foreground = #000
@@ -165,24 +147,11 @@
 [module/wlan]
   type = internal/network
   interface = wlp0s20f0u5
-  interval = 3.0
-
-  format-connected = <ramp-signal> <label-connected>
-  format-connected-underline = #9f78e1
-  label-connected = %essid%
-
-  format-disconnected =
-  ;format-disconnected = <label-disconnected>
-  ;format-disconnected-underline = ${self.format-connected-underline}
-  ;label-disconnected = %ifname% disconnected
-  ;label-disconnected-foreground = ${colors.foreground-alt}
-
-  ramp-signal-0 = 
-  ramp-signal-1 = 
-  ramp-signal-2 = 
-  ramp-signal-3 = 
-  ramp-signal-4 = 
-  ramp-signal-foreground = ${colors.foreground-alt}
+  interval = 5.0
+  label-connected = ﬉%essid% 鷺%signal% %downspeed% %upspeed%
+  label-connected-underline = ${xrdb:color5}
+  label-disconnected = ﲁ
+  label-disconnected-underline = ${xrdb:color5}
 
 [module/temperature]
   type = internal/temperature
