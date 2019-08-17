@@ -83,16 +83,16 @@ configuration {
 }
 window {
     background-color: @xbg;
-    border: 0;
-    border-color: @x14;
+    border: 1px;
+    border-color: @x3;
     border-radius: 12px;
-    padding: 40;
+    padding: 20;
     width: 50%;
     height: 50%;
 }
 mainbox {
     border: 0;
-    border-color: @x0;
+    border-color: @x3;
     padding: 6;
 }
 message {
@@ -125,19 +125,19 @@ element normal.urgent {
 }
 element normal.active {
     background-color: rgba (0,0,0,0%);
-    text-color:       @x5;
+    text-color:       @x3;
 }
 element selected.normal {
     background-color: rgba (0,0,0,0%);
-    text-color:       @x13;
+    text-color:       @x2;
 }
 element selected.urgent {
     background-color: rgba (0,0,0,0%);
-    text-color:       @x13;
+    text-color:       @x2;
 }
 element selected.active {
     background-color: rgba (0,0,0,0%);
-    text-color:       @x13;
+    text-color:       @x2;
 }
 element alternate.normal {
     background-color: rgba (0,0,0,0%);
@@ -149,7 +149,7 @@ element alternate.urgent {
 }
 element alternate.active {
     background-color: rgba (0,0,0,0%);
-    text-color:       @x5;
+    text-color:       @x2;
 }
 scrollbar {
     width:        4px ;
@@ -173,14 +173,13 @@ button {
     border-color: @x8;
 }
 button selected {
-    background-color: @xbg;
+    background-color: @x1;
     text-color:       @x7;
-    border:       3px;
     border-radius: 20px;
-    border-color:     @x7;
 }
 inputbar {
-    spacing:    0px ;
+    spacing:    10px ;
+    font-size: 18px;
     text-color: @xfg;
     padding:    1px ;
     children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
