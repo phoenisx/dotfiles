@@ -54,6 +54,8 @@
   ;   {overline,underline}-color
   line-size = 2
 
+  tray-position = right
+
   ;font-N = <fontconfig pattern>;<vertical offset>
 	font-0 = Fura Code Nerd Font:size=4;2
 	font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
