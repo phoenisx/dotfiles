@@ -178,8 +178,7 @@ button selected {
     border-radius: 20px;
 }
 inputbar {
-    spacing:    10px ;
-    font-size: 18px;
+    spacing: 0;
     text-color: @xfg;
     padding:    1px ;
     children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
