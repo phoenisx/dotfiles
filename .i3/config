@@ -51,6 +51,16 @@ bindsym $mod+Ctrl+m exec terminal -e 'alsamixer'
 #exec --no-startup-id pa-applet
 #bindsym $mod+Ctrl+m exec pavucontrol
 
+# Alsa Specific Bindings
+# bindsym XF86AudioRaiseVolume exec "amixer -q sset Master,0 1+ unmute"
+# bindsym XF86AudioLowerVolume exec "amixer -q sset Master,0 1- unmute"
+# bindsym XF86AudioMute exec "amixer -q sset Master,0 toggle"
+
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 1 +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 1 -5% #decrease sound volume
+bindsym XF86AudioMute exec pactl set-sink-mute 1 toggle # mute sound
+
 ################################################################################################
 
 # Screen brightness controls
@@ -228,10 +238,20 @@ for_window [class="Xfburn"] floating enable
 for_window [class="Gucharmap"] floating enable
 for_window [class="vlc"] floating enable
 for_window [class="Postman"] floating enable
+for_window [class="Cadence"] floating enable
 # Firefox specific Floating Windows
 for_window [window_role="Organizer"] floating enable
 # NVidia Specific Floating Windows
 for_window [class="Nvidia-settings"] floating enable
+
+# For special windows
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="bubble"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [window_role="Preferences"] floating enable
+for_window [window_role="About"] floating enable
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable
 
 # switch to workspace with urgent window automatically
 for_window [urgent=latest] focus
