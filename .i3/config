@@ -157,8 +157,8 @@ bindsym $mod+Ctrl+Left workspace prev
 set $ws1 1:
 set $ws2 2:
 set $ws3 3:
-set $ws4 4:辶
-set $ws5 5:ﭧ
+set $ws4 4:ﭧ
+set $ws5 5:辶
 set $ws6 6
 set $ws7 7
 set $ws8 8
@@ -205,8 +205,8 @@ bindsym $mod+Shift+9 move container to workspace $ws8; workspace $ws9
 assign [class="firefox"] $ws2
 assign [class="URxvt"] $ws1
 assign [class="Code"] $ws3
-assign [class="vlc"] $ws4
-assign [class="Postman"] $ws5
+assign [class="Postman"] $ws4
+assign [class="vlc"] $ws5
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1

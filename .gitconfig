@@ -13,3 +13,5 @@
 	changed = yellow
 	untracked = red bold
 
+[core]
+	editor = vim
