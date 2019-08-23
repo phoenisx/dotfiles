@@ -85,23 +85,11 @@ bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
 # focus_follows_mouse no
 
-# change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
-
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
-
-# move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -282,6 +270,8 @@ mode "$mode_system" {
     bindsym Escape mode "default"
 }
 
+bindsym $mod+l exec --no-startup-id i3exit lock, mode "default"
+
 # Resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
 mode "resize" {
@@ -362,12 +352,15 @@ bindsym $mod+m bar mode toggle
 # Theme colors
 # class                   border        backgr.       text          indic.        child_border
   client.focused          $term_color3  $term_color3  $term_color0  $term_color3
-  client.focused_inactive #2F3D44 #2F3D44 #1ABC9C #454948
-  client.unfocused        #2F3D44 #2F3D44 #1ABC9C #454948
+  client.focused_inactive $term_color0  $term_color0  $term_color7  $term_color3
+  client.unfocused        $term_color0  $term_color0  $term_color7  $term_color3
   client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
   client.placeholder      #000000 #0c0c0c #ffffff #000000
 
   client.background       #2B2C2B
+
+# Title Styles
+  title_align center
 
 #############################
 ### settings for i3-gaps: ###

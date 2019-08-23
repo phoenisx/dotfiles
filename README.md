@@ -1,6 +1,28 @@
-# Initial Setup for Linux
+# Shub's Dotfiles
 
-This repo contains custom **vim**, **nvim**, **atom**, **vscode** and **zsh** configuration:
+I have been troubling to setup Linux for a long time now. But recently Reddit has helped me a lot
+and the subreddit [r/unixporn](https://www.reddit.com/r/unixporn/) has inspired me to upgrade my
+Linux environment. I still have a long way to go for my setup to be complete, and totally fitting for
+my personal use.
+
+![Neofetch Details](./images/neofetch.png)
+
+> This repo contains custom **fish-shell**, **i3** and many other confs for my persolnal setup
+
+## Important Tools required:
+
+> After Installing Manjaro, with i3wm as windows manager, some important tools
+> are required for my setup (Arch is not used from scratch, as there are many setups and confs
+> that manjaro handles by default).
+
+* Polybar - replaced the default `i3bar` with polybar for better customizations
+* Alacritty - I was using `URxvt` for starters for my Terminal, it's quite light weight,
+ but lacks support for dynamic glyph widths, where alacritty is great. Also Alacritty is GPU
+ accelerated, which makes it the future of Terminals.
+* Rofi - Program runner
+* Nerd Fonts - Patched fonts to get handled by powerline shells.
+*
+
 
 ## Dotfiles Setup:
 ### File Structure and Usages:
@@ -41,7 +63,7 @@ Using Synaptics Manager Install `bcmwl-kernel-source`, for wireless network...
 * [Awesome Terminal Fonts](https://github.com/gabrielelana/awesome-terminal-fonts)
 	- Can be used for Modifying various terminal related fonts, to look better...
 * [OH MY ZSH](https://github.com/arialdomartini/oh-my-git)
-	repo is great for beautifuly setting up the ZSH Terminal.  
+	repo is great for beautifuly setting up the ZSH Terminal.
 
 ### Command Line:
 
