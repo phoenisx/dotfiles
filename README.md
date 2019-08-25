@@ -36,6 +36,8 @@ my personal use.
 	powerline shells. I am using a mix of `FuraCode` and `Inconsolata`.
 * [Xresouces-Themes](https://github.com/logico-dev/Xresources-themes) - Privides some managed
 	set of theme colors, from which I am currently using `iterm-afterglow`.
+* [Flameshot](https://github.com/lupoDharkael/flameshot) - A very good Screeshot tool. I
+	would love to contribute, or create some Rust based plugins.
 
 ## Some useful commands
 
