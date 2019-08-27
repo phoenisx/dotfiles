@@ -54,11 +54,11 @@
   ;   {overline,underline}-color
   line-size = 2
 
-  tray-position = right
-  tray-detached = false
-  tray-background = ${colors.background}
-  tray-scale = 1
-  tray-maxsize = 16
+#  tray-position = right
+#  tray-detached = false
+#  tray-background = ${colors.background}
+#  tray-scale = 1
+#  tray-maxsize = 16
 
   ;font-N = <fontconfig pattern>;<vertical offset>
 	font-0 = Fura Code Nerd Font:size=4;2
