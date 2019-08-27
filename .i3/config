@@ -144,11 +144,11 @@ bindsym $mod+Ctrl+Left workspace prev
 set $ws1 1:
 set $ws2 2:
 set $ws3 3:
-set $ws4 4:ﭧ
+set $ws4 4:
 set $ws5 5:辶
 set $ws6 6
 set $ws7 7
-set $ws8 8
+set $ws8 8:ﭧ
 set $ws9 9
 
 # switch to workspace
@@ -189,11 +189,12 @@ bindsym $mod+Shift+9 move container to workspace $ws8; workspace $ws9
 # assign [class="Pale moon"] $ws2
 # assign [class="Pcmanfm"] $ws3
 # assign [class="Skype"] $ws5
-assign [class="firefox"] $ws2
 assign [class="URxvt"] $ws1
+assign [class="firefox"] $ws2
 assign [class="Code"] $ws3
-assign [class="Postman"] $ws4
+assign [class="discord"] $ws4
 assign [class="vlc"] $ws5
+assign [class="Postman"] $ws8
 
 # Open specific applications in floating mode
 for_window [title="alsamixer"] floating enable border pixel 1
@@ -226,6 +227,7 @@ for_window [class="Gucharmap"] floating enable
 for_window [class="vlc"] floating enable
 for_window [class="Postman"] floating enable
 for_window [class="Cadence"] floating enable
+for_window [class="discord"] floating enable
 # Firefox specific Floating Windows
 for_window [window_role="Organizer"] floating enable
 # NVidia Specific Floating Windows
