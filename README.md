@@ -31,6 +31,8 @@ my personal use.
 		my terminal theme.
 	- [Fuzzy Search](https://github.com/junegunn/fzf) - This is required for a good fuzzy search
 		for the `history`. Can be used for other stuffs as well.
+* [Compton](https://github.com/tryone144/compton) - I am using a compton fork, by user
+	[tryone144](https://github.com/tryone144)	which allows to use, dual-kawase blur effect for windows.
 * [Rofi](https://github.com/davatorium/rofi) - Program runner
 * [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts) - Patched fonts to get handled by
 	powerline shells. I am using a mix of `FuraCode` and `Inconsolata`.
