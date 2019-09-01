@@ -40,6 +40,8 @@ my personal use.
 	set of theme colors, from which I am currently using `iterm-afterglow`.
 * [Flameshot](https://github.com/lupoDharkael/flameshot) - A very good Screeshot tool. I
 	would love to contribute, or create some Rust based plugins.
+* [GoTop](https://github.com/cjbassi/gotop) - Awesome way to get CPU/Memory etc. details in presentable
+	CMD UI. To load colorscheme - `gotop -c colors`
 
 ## Some useful commands
 
