@@ -43,6 +43,10 @@ my personal use.
 * [GoTop](https://github.com/cjbassi/gotop) - Awesome way to get CPU/Memory etc. details in presentable
 	CMD UI. To load colorscheme - `gotop -c colors`
 
+> NOTE: I am using custom Aliases and Scripts for small tasks. You can find them in
+> [.config/fish/*.alias.fish](./.config/fish) and
+> [.config/fish/functions](./.config/fish/functions) respectively.
+
 ## Some useful commands
 
 * Clean Font Cache - `fc-cache -vf ~/.fonts/`
