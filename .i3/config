@@ -190,7 +190,7 @@ bindsym $mod+Shift+9 move container to workspace $ws8; workspace $ws9
 # assign [class="Pcmanfm"] $ws3
 # assign [class="Skype"] $ws5
 assign [class="URxvt"] $ws1
-assign [class="firefox"] $ws2
+assign [class="Firefox"] $ws2
 assign [class="Code"] $ws3
 assign [class="discord"] $ws4
 assign [class="vlc"] $ws5
