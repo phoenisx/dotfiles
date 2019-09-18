@@ -21,14 +21,18 @@
 
 [bar/base]
 	dpi      = 300
-	width    = 100%
-	height   = 32
-	offset-x = 0
-	offset-y = 0
+
+  width = 100%
+  height = 32
+
+  offset-x = 0
+  offset-y = 0
+
+  radius = 0
 
 	bottom = false
 
-	background = ${colors.background}
+	background = #99212121
 	foreground = ${colors.foreground}
 
 	border-bottom-size  = 0
