@@ -82,7 +82,7 @@ configuration {
     selected-active-background:  rgba ( 224, 224, 224, 100 % );
 }
 window {
-    background-color: @xbg;
+    background-color: rgba(33, 33, 33, 75%);
     border: 1px;
     border-color: @x3;
     border-radius: 12px;
