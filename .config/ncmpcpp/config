@@ -1,0 +1,21 @@
+ncmpcpp_directory = ~/.ncmpcpp
+
+mpd_host = localhost
+mpd_port = 6600
+mpd_music_dir = ~/Music
+
+execute_on_song_change = "bash ~/.config/ncmpcpp/player-notification.sh"
+
+playlist_disable_highlight_delay = 0
+message_delay_time = 3
+
+progressbar_look = "━━━"
+progressbar_color = black:b
+progressbar_elapsed_color = red:b
+
+header_visibility = yes
+statusbar_visibility = yes
+titles_visibility = no
+song_columns_list_format = (20)[]{a} (50)[white]{t|f:Title} (7f)[green]{l}
+
+visualizer_in_stereo = yes
