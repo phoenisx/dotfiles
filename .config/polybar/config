@@ -161,7 +161,7 @@
 [module/wlan]
   type = internal/network
   interface = wlp0s20f0u5
-  interval = 5.0
+  interval = 1.0
   label-connected = ﬉%essid% 鷺%signal% %downspeed% %upspeed%
   label-connected-underline = ${xrdb:color5}
   label-disconnected = ﲁ
