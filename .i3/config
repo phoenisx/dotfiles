@@ -259,16 +259,16 @@ bindsym $mod+0 mode "$mode_system"
 set $mode_system (l)ock, (e)xit, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
 mode "$mode_system" {
 # bindsym l exec --no-startup-id i3exit lock, mode "default"
-    bindsym l exec --no-startup-id fish -c "system_exit lock", mode "default"
-    bindsym s exec --no-startup-id fish -c "system_exit suspend", mode "default"
-    bindsym e exec --no-startup-id fish -c "system_exit logout", mode "default"
-    bindsym h exec --no-startup-id fish -c "system_exit hibernate", mode "default"
-    bindsym r exec --no-startup-id fish -c "system_exit reboot", mode "default"
-    bindsym Shift+s exec --no-startup-id fish -c "system_exit shutdown", mode "default"
+  bindsym l exec --no-startup-id fish -c "system_exit lock", mode "default"
+  bindsym s exec --no-startup-id fish -c "system_exit suspend", mode "default"
+  bindsym e exec --no-startup-id fish -c "system_exit logout", mode "default"
+  bindsym h exec --no-startup-id fish -c "system_exit hibernate", mode "default"
+  bindsym r exec --no-startup-id fish -c "system_exit reboot", mode "default"
+  bindsym Shift+s exec --no-startup-id fish -c "system_exit shutdown", mode "default"
 
-    # exit system mode: "Enter" or "Escape"
-    bindsym Return mode "default"
-    bindsym Escape mode "default"
+  # exit system mode: "Enter" or "Escape"
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
 }
 
 bindsym $mod+l exec --no-startup-id fish -c "system_exit lock"
@@ -277,25 +277,25 @@ bindsym $mod+x exec --no-startup-id fish -c "system_exit hibernate"
 # Resize window (you can also use the mouse for that)
 bindsym $mod+r mode "resize"
 mode "resize" {
-        # These bindings trigger as soon as you enter the resize mode
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 5 px or 5 ppt
-        bindsym k resize grow height 5 px or 5 ppt
-        bindsym l resize shrink height 5 px or 5 ppt
-        bindsym semicolon resize grow width 5 px or 5 ppt
+  # These bindings trigger as soon as you enter the resize mode
+  # Pressing left will shrink the window’s width.
+  # Pressing right will grow the window’s width.
+  # Pressing up will shrink the window’s height.
+  # Pressing down will grow the window’s height.
+  bindsym j resize shrink width 5 px or 5 ppt
+  bindsym k resize grow height 5 px or 5 ppt
+  bindsym l resize shrink height 5 px or 5 ppt
+  bindsym semicolon resize grow width 5 px or 5 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
-        bindsym Right resize grow width 10 px or 10 ppt
+  # same bindings, but for the arrow keys
+  bindsym Left resize shrink width 10 px or 10 ppt
+  bindsym Down resize grow height 10 px or 10 ppt
+  bindsym Up resize shrink height 10 px or 10 ppt
+  bindsym Right resize grow width 10 px or 10 ppt
 
-        # exit resize mode: Enter or Escape
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+  # exit resize mode: Enter or Escape
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
 }
 
 # Lock screen
@@ -330,24 +330,24 @@ exec_always --no-startup-id fix_xcursor
 # to:
 # background $term_background
 # Same logic applied to everything else.
-set_from_resource $term_background background
-set_from_resource $term_foreground foreground
-set_from_resource $term_color0     color0
-set_from_resource $term_color1     color1
-set_from_resource $term_color2     color2
-set_from_resource $term_color3     color3
-set_from_resource $term_color4     color4
-set_from_resource $term_color5     color5
-set_from_resource $term_color6     color6
-set_from_resource $term_color7     color7
-set_from_resource $term_color8     color8
-set_from_resource $term_color9     color9
-set_from_resource $term_color10    color10
-set_from_resource $term_color11    color11
-set_from_resource $term_color12    color12
-set_from_resource $term_color13    color13
-set_from_resource $term_color14    color14
-set_from_resource $term_color15    color15
+set_from_resource $term_background i3wm.background
+set_from_resource $term_foreground i3wm.foreground
+set_from_resource $term_color0     i3wm.color0
+set_from_resource $term_color1     i3wm.color1
+set_from_resource $term_color2     i3wm.color2
+set_from_resource $term_color3     i3wm.color3
+set_from_resource $term_color4     i3wm.color4
+set_from_resource $term_color5     i3wm.color5
+set_from_resource $term_color6     i3wm.color6
+set_from_resource $term_color7     i3wm.color7
+set_from_resource $term_color8     i3wm.color8
+set_from_resource $term_color9     i3wm.color9
+set_from_resource $term_color10    i3wm.color10
+set_from_resource $term_color11    i3wm.color11
+set_from_resource $term_color12    i3wm.color12
+set_from_resource $term_color13    i3wm.color13
+set_from_resource $term_color14    i3wm.color14
+set_from_resource $term_color15    i3wm.color15
 
 # hide/unhide i3status bar
 bindsym $mod+m bar mode toggle
@@ -357,8 +357,8 @@ bindsym $mod+m bar mode toggle
   client.focused          $term_color3  $term_color3  $term_color0  $term_color3
   client.focused_inactive $term_color0  $term_color0  $term_color7  $term_color3
   client.unfocused        $term_color0  $term_color0  $term_color7  $term_color3
-  client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
-  client.placeholder      #000000 #0c0c0c #ffffff #000000
+  client.urgent           #CB4B16       #FDF6E3       #1ABC9C       #268BD2
+  client.placeholder      #000000       #0c0c0c       #ffffff       #000000
 
   client.background       #2B2C2B
 
@@ -392,34 +392,34 @@ set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
 bindsym $mod+Shift+g mode "$mode_gaps"
 
 mode "$mode_gaps" {
-        bindsym o      mode "$mode_gaps_outer"
-        bindsym i      mode "$mode_gaps_inner"
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+  bindsym o      mode "$mode_gaps_outer"
+  bindsym i      mode "$mode_gaps_inner"
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
 }
 mode "$mode_gaps_inner" {
-        bindsym plus  gaps inner current plus 5
-        bindsym minus gaps inner current minus 5
-        bindsym 0     gaps inner current set 0
+  bindsym plus  gaps inner current plus 5
+  bindsym minus gaps inner current minus 5
+  bindsym 0     gaps inner current set 0
 
-        bindsym Shift+plus  gaps inner all plus 5
-        bindsym Shift+minus gaps inner all minus 5
-        bindsym Shift+0     gaps inner all set 0
+  bindsym Shift+plus  gaps inner all plus 5
+  bindsym Shift+minus gaps inner all minus 5
+  bindsym Shift+0     gaps inner all set 0
 
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
 }
 mode "$mode_gaps_outer" {
-        bindsym plus  gaps outer current plus 5
-        bindsym minus gaps outer current minus 5
-        bindsym 0     gaps outer current set 0
+  bindsym plus  gaps outer current plus 5
+  bindsym minus gaps outer current minus 5
+  bindsym 0     gaps outer current set 0
 
-        bindsym Shift+plus  gaps outer all plus 5
-        bindsym Shift+minus gaps outer all minus 5
-        bindsym Shift+0     gaps outer all set 0
+  bindsym Shift+plus  gaps outer all plus 5
+  bindsym Shift+minus gaps outer all minus 5
+  bindsym Shift+0     gaps outer all set 0
 
-        bindsym Return mode "default"
-        bindsym Escape mode "default"
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
 }
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh

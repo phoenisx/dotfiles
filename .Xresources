@@ -57,7 +57,7 @@ XTerm*selectToClipboard: true
 !! Override Colors from the Them# Override Colors from the Theme...
 #include "/home/subroto/Xresources-themes/iterm-Afterglow.Xresources"
 
-Xcursor.theme: xcursor-breeze
+Xcursor.theme: xcursor-breeze-snow
 Xcursor.size:                     0
 
 ! `,` helps to separate fonts, last one being the fallback
