@@ -228,6 +228,7 @@ for_window [class="vlc"] floating enable
 for_window [class="Postman"] floating enable
 for_window [class="Cadence"] floating enable
 for_window [class="discord"] floating enable
+for_window [class="TelegramDesktop"] floating enable
 # Firefox specific Floating Windows
 for_window [window_role="Organizer"] floating enable
 # NVidia Specific Floating Windows
