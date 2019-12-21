@@ -1,1 +1,1 @@
-/home/subroto/.local/share/omf/themes/budspencer/fish_prompt.fish
+/home/subroto/.local/share/omf/themes/scorphish/fish_prompt.fish
