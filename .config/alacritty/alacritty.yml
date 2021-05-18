@@ -132,7 +132,7 @@ font:
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
-    x: -1
+    x: 0
     y: 0
 
   # Glyph offset determines the locations of the glyphs within their cells with
@@ -140,7 +140,7 @@ font:
   # increasing `y` moves the glyph upwards.
   glyph_offset:
     x: 0
-    y: 7
+    y: 0
 
   # Thin stroke font rendering (macOS only)
   #
@@ -492,10 +492,12 @@ key_bindings:
   - { key: D, mods: Command, chars: "\x01\x7c" }
   - { key: D, mods: Command|Shift, chars: "\x01\x2d" }
   - { key: T, mods: Command, chars: "\x01\x74" }
-  - { key: LBracket, mods: Command, chars: "\x08" }
+  - { key: LBracket, mods: Command, chars: "\x01\x08" }
   # Use command + ] - to go to previous tmux window
-  - { key: RBracket, mods: Command, chars: "\x0c" }
+  - { key: RBracket, mods: Command, chars: "\x01\x0c" }
   - { key: Return, mods: Command|Shift, chars: "\x00" }
+  - { key: 1, mods: Command, chars: "¡" }
+  - { key: 2, mods: Command, chars: "™" }
 
   - { key: Paste,                   action: Paste                            }
   - { key: Copy,                    action: Copy                             }
