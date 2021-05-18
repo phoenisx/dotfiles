@@ -337,6 +337,10 @@ live_config_reload: true
 #   - (Windows) powershell
 shell:
  program: /usr/local/bin/fish
+ args:
+    - -l
+    - -c
+    - "tmux attach || tmux"
 
 # Startup directory
 #
@@ -501,6 +505,7 @@ key_bindings:
   - { key: Key3, mods: Command, chars: "\x1b\x4f\x52" }
   - { key: Key4, mods: Command, chars: "\x1b\x4f\x53" }
   - { key: Key5, mods: Command, chars: "\x1b\x4f\x54" }
+  # - { key: Home, mods: Alt,     chars: "\x1b[1;3H"
 
   - { key: Paste,                   action: Paste                            }
   - { key: Copy,                    action: Copy                             }

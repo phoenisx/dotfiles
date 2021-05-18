@@ -69,5 +69,6 @@
   "[rust]": {
     "editor.tabSize": 4,
   },
-  "rust-client.channel": "stable"
+  "rust-client.channel": "stable",
+  "workbench.editor.untitled.hint": "hidden"
 }
