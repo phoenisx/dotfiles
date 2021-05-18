@@ -1,1 +1,1 @@
-/home/subroto/.fzf/shell/key-bindings.fish
+/Users/subrotobiswas/.fzf/shell/key-bindings.fish
