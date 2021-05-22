@@ -8,7 +8,6 @@
   "editor.letterSpacing": 0,
   "workbench.editor.tabSizing": "shrink",
   "editor.wordWrap": "on",
-  "editor.cursorBlinking": "solid",
   "editor.colorDecorators": true,
   "workbench.activityBar.visible": true,
   "workbench.statusBar.feedback.visible": false,
@@ -70,5 +69,9 @@
     "editor.tabSize": 4,
   },
   "rust-client.channel": "stable",
-  "workbench.editor.untitled.hint": "hidden"
+  "workbench.editor.untitled.hint": "hidden",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "phase",
+  "workbench.editor.showTabs": false
 }
