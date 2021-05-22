@@ -72,6 +72,5 @@
   "workbench.editor.untitled.hint": "hidden",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.cursorStyle": "block",
-  "editor.cursorBlinking": "phase",
-  "workbench.editor.showTabs": false
+  "editor.cursorBlinking": "phase"
 }
