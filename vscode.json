@@ -1,5 +1,4 @@
 {
-  "window.zoomLevel": 0,
   "editor.fontFamily": "VictorMono Nerd Font Mono, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
@@ -68,9 +67,24 @@
   "[rust]": {
     "editor.tabSize": 4,
   },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
   "rust-client.channel": "stable",
   "workbench.editor.untitled.hint": "hidden",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.cursorStyle": "block",
-  "editor.cursorBlinking": "phase"
+  "editor.cursorBlinking": "phase",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  }
 }
