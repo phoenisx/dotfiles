@@ -9,7 +9,6 @@
   "editor.wordWrap": "on",
   "editor.colorDecorators": true,
   "workbench.activityBar.visible": true,
-  "workbench.statusBar.feedback.visible": false,
   "workbench.sideBar.location": "left",
   "editor.renderWhitespace": "none",
   "editor.rulers": [
@@ -27,7 +26,7 @@
     "**/.next": true
   },
   "workbench.editor.tabCloseButton": "off",
-  "editor.autoIndent": false,
+  "editor.autoIndent": "none",
   "editor.snippetSuggestions": "top",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
@@ -42,10 +41,6 @@
     "suppressShowKeyBindingsNotice": true
   },
   "explorer.confirmDragAndDrop": false,
-  "path-intellisense.mappings": {
-    "/": "${workspaceRoot}",
-    "components": "${workspaceRoot}/src/components"
-  },
   "explorer.confirmDelete": false,
   "editor.minimap.enabled": false,
   "files.insertFinalNewline": true,
@@ -58,8 +53,6 @@
     "strings": false,
     "markdown": true
   },
-  "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true,
 
   // https://code.visualstudio.com/docs/getstarted/settings#_language-specific-editor-settings
   "editor.insertSpaces": true,
