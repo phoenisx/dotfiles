@@ -26,7 +26,6 @@
     "**/.next": true
   },
   "workbench.editor.tabCloseButton": "off",
-  "editor.autoIndent": "none",
   "editor.snippetSuggestions": "top",
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "window.title": "${dirty} ${activeEditorMedium}${separator}${rootName}",
@@ -78,6 +77,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
