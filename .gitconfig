@@ -1,5 +1,6 @@
 [core]
   pager = delta
+  ignorecase = false
 [user]
   email = shub1493biswas@gmail.com
   name = Phoenix
