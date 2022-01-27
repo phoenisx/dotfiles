@@ -2,7 +2,7 @@
   pager = delta
   ignorecase = false
 [user]
-  email = subroto.biswas@upgrad.com
+  email = subroto.biswas@postman.com
   name = Subroto
 [interactive]
   diffFilter = delta --color-only
