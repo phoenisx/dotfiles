@@ -36,8 +36,6 @@
     "suppressGitVersionWarning": false,
     "suppressLineUncommittedWarning": false,
     "suppressNoRepositoryWarning": false,
-    "suppressResultsExplorerNotice": false,
-    "suppressShowKeyBindingsNotice": true
   },
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
@@ -81,5 +79,28 @@
   },
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
-  }
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "omnisharp.useGlobalMono": "always",
+  "UEIntellisenseFixes.enableFixes": true,
+  "UEIntellisenseFixes.enableOptionalFixes": true,
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "svelte.enable-ts-plugin": true,
+  "debug.onTaskErrors": "debugAnyway",
+  "debug.javascript.autoAttachFilter": "always",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "files.associations": {
+    "*.mdx": "markdown"
+  },
+  "redhat.telemetry.enabled": false,
+  "window.zoomLevel": 1,
+  "[postcss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.largeFileOptimizations": false
 }
