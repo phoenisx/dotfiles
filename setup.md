@@ -3,6 +3,7 @@
 ## Preparation
 - Install Alactritty or some terminal first
 - Install `brew`
+    - Follow https://stackoverflow.com/questions/66724016/my-fish-is-blind-fish-does-not-recognise-any-commands-after-setting-it-as-defa to setup brew on M1 and fish shell
 - `brew install`
     - pyenv
     - fish
