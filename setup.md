@@ -4,6 +4,7 @@
 - Install Alactritty or some terminal first
 - Install `brew`
 - `brew install`
+    - pyenv
     - fish
     - neofetch
     - fzf
