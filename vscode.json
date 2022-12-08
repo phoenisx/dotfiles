@@ -82,13 +82,14 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "debug.javascript.autoAttachFilter": "always",
+  "svelte.enable-ts-plugin": true,
+  "debug.onTaskErrors": "debugAnyway",
+  "debug.javascript.autoAttachFilter": "onlyWithFlag",
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "workbench.iconTheme": "material-icon-theme",
   "redhat.telemetry.enabled": false,
-  "window.zoomLevel": 1,
   "[postcss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -96,5 +97,17 @@
   "editor.bracketPairColorization.enabled": false,
   "js/ts.implicitProjectConfig.experimentalDecorators": true,
   "editor.unicodeHighlight.ambiguousCharacters": false,
-  "diffEditor.ignoreTrimWhitespace": false
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "grammarly.files.include": [
+    "content/**/*.md"
+  ],
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "svelte.plugin.svelte.note-new-transformation": false,
+  "window.zoomLevel": 1,
+  "terminal.integrated.defaultProfile.osx": "fish"
 }

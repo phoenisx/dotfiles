@@ -6,3 +6,5 @@ alias npi="npm install"
 alias npr="npm run"
 alias npu="npm uninstall"
 alias npls="npm list"
+
+alias pn="pnpm"

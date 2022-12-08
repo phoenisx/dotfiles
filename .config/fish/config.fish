@@ -19,7 +19,9 @@ end
 set -g theme_powerline_fonts yes
 set -g theme_nerd_fonts yes
 
-set -gx NVM_DIR (brew --prefix nvm)
+if type -q brew
+  set -gx NVM_DIR (brew --prefix nvm)
+end
 set -gx PATH ~/go/bin/ ~/.cargo/bin (echo "$DENO_INSTALL/bin") /opt/homebrew/bin/ /usr/local/bin $PATH
 
 switch (uname)
@@ -38,7 +40,9 @@ end
 # ---
 # pyenv init --path
 #######
-while set index (contains -i -- '/Users/shub/.pyenv/shims' $PATH)
-set -eg PATH[$index]; end; set -e index
-set -gx PATH '/Users/shub/.pyenv/shims' $PATH
-command pyenv rehash 2>/dev/null
+if type -q pyenv
+  while set index (contains -i -- '/Users/shub/.pyenv/shims' $PATH)
+  set -eg PATH[$index]; end; set -e index
+  set -gx PATH '/Users/shub/.pyenv/shims' $PATH
+  command pyenv rehash 2>/dev/null
+end

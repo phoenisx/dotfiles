@@ -322,8 +322,8 @@ live_config_reload: true
 #   Basically means, attach to a default session
 #   or create a new session
 shell:
- program: /opt/homebrew/bin/fish
- args:
+  program: /opt/homebrew/bin/fish
+  args:
     - -l
     - -c
     - "tmux new -As0"
