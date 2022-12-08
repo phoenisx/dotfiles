@@ -7,7 +7,7 @@
 [interactive]
   diffFilter = delta --color-only
 [delta]
-  syntax-theme = Monokai Extende
+  syntax-theme = Monokai Extended
   features = side-by-side line-numbers decorations
   whitespace-error-style = 22 reverse
   plus-style = syntax "#4a503d"

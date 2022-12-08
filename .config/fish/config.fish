@@ -21,3 +21,24 @@ set -g theme_nerd_fonts yes
 
 set -gx NVM_DIR (brew --prefix nvm)
 set -gx PATH ~/go/bin/ ~/.cargo/bin (echo "$DENO_INSTALL/bin") /opt/homebrew/bin/ /usr/local/bin $PATH
+
+switch (uname)
+case Linux
+  # Do nothing for now
+case Darwin
+ set -gx PATH "$HOME/Library/Python/3.10/bin/"  $PATH
+case '*'
+  # Do nothing for now
+end
+
+#######
+# brew install pyenv
+# pyenv install 2.7.18 or 3.x
+# pyenv global 2.7.18
+# ---
+# pyenv init --path
+#######
+while set index (contains -i -- '/Users/shub/.pyenv/shims' $PATH)
+set -eg PATH[$index]; end; set -e index
+set -gx PATH '/Users/shub/.pyenv/shims' $PATH
+command pyenv rehash 2>/dev/null

@@ -53,7 +53,7 @@
 
   // https://code.visualstudio.com/docs/getstarted/settings#_language-specific-editor-settings
   "editor.insertSpaces": true,
-  "editor.tabSize": 2,
+  "editor.tabSize": 3,
   "[rust]": {
     "editor.tabSize": 4,
   },
@@ -68,11 +68,8 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -82,25 +79,22 @@
   },
   "security.workspace.trust.untrustedFiles": "open",
   "omnisharp.useGlobalMono": "always",
-  "UEIntellisenseFixes.enableFixes": true,
-  "UEIntellisenseFixes.enableOptionalFixes": true,
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "svelte.enable-ts-plugin": true,
-  "debug.onTaskErrors": "debugAnyway",
   "debug.javascript.autoAttachFilter": "always",
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "workbench.iconTheme": "material-icon-theme",
-  "files.associations": {
-    "*.mdx": "markdown"
-  },
   "redhat.telemetry.enabled": false,
   "window.zoomLevel": 1,
   "[postcss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.largeFileOptimizations": false
+  "editor.largeFileOptimizations": false,
+  "editor.bracketPairColorization.enabled": false,
+  "js/ts.implicitProjectConfig.experimentalDecorators": true,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "diffEditor.ignoreTrimWhitespace": false
 }
