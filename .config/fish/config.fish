@@ -29,6 +29,8 @@ case Linux
   # Do nothing for now
 case Darwin
  set -gx PATH "$HOME/Library/Python/3.10/bin/"  $PATH
+ set -gx PATH "$HOME/3rd-party/depot_tools"  $PATH
+#  set -gx DOCKER_DEFAULT_PLATFORM "linux/amd64"
 case '*'
   # Do nothing for now
 end
@@ -46,3 +48,12 @@ if type -q pyenv
   set -gx PATH '/Users/shub/.pyenv/shims' $PATH
   command pyenv rehash 2>/dev/null
 end
+
+# pnpm
+set -gx PNPM_HOME "/Users/shub/Library/pnpm"
+set -gx PATH "$PNPM_HOME" $PATH
+# pnpm end
+# Created by `pipx` on 2023-04-29 10:26:20
+set PATH $PATH /Users/shub/.local/bin
+pyenv init - | source
+status --is-interactive; and pyenv virtualenv-init - | source

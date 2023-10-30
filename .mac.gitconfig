@@ -1,6 +1,7 @@
 [core]
   pager = delta
-  ignorecase = false
+	ignorecase = false
+	editor = vim -f
 [user]
   email = shub1493biswas@gmail.com
   name = Shub
