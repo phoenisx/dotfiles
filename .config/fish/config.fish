@@ -5,7 +5,9 @@
 switch (uname)
 case Linux
   # Need to change this
-  set -g DENO_INSTALL "/Users/shub/.deno"
+  set -g DENO_INSTALL "/home/phoenix/.deno"
+  alias pbcopy='xsel --clipboard --input'
+  alias pbpaste='xsel --clipboard --output'
 case Darwin
   set -g DENO_INSTALL "/Users/shub/.deno"
   # Check this for details: https://github.com/oh-my-fish/theme-budspencer/issues/57#issuecomment-551452088
@@ -47,13 +49,14 @@ if type -q pyenv
   set -eg PATH[$index]; end; set -e index
   set -gx PATH '/Users/shub/.pyenv/shims' $PATH
   command pyenv rehash 2>/dev/null
+  # Created by `pipx` on 2023-04-29 10:26:20
+  set PATH $PATH /Users/shub/.local/bin
+  pyenv init - | source
+  status --is-interactive; and pyenv virtualenv-init - | source
 end
 
 # pnpm
 set -gx PNPM_HOME "/Users/shub/Library/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
 # pnpm end
-# Created by `pipx` on 2023-04-29 10:26:20
-set PATH $PATH /Users/shub/.local/bin
-pyenv init - | source
-status --is-interactive; and pyenv virtualenv-init - | source
+

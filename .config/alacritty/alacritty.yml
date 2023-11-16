@@ -102,7 +102,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux) monospace
     #   - (Windows) Consolas
-    family: VictorMono Nerd Font
+    family: "VictorMono Nerd Font"
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -113,7 +113,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: VictorMono Nerd Font
+    family: "VictorMono Nerd Font"
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -124,13 +124,13 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: VictorMono Nerd Font
+    family: "VictorMono Nerd Font"
 
     # The `style` can be specified to pick a specific face.
     style: Italic
 
   # Point size
-  size: 14.0
+  size: 11.0
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -322,7 +322,7 @@ live_config_reload: true
 #   Basically means, attach to a default session
 #   or create a new session
 shell:
-  program: /opt/homebrew/bin/fish
+  program: /usr/bin/fish
   args:
     - -l
     - -c
@@ -348,7 +348,8 @@ working_directory: None
 enable_experimental_conpty_backend: false
 
 # Send ESC (\x1b) before characters when alt is pressed.
-alt_send_esc: true
+# This config has been removed, i need to remove this as well.
+# alt_send_esc: true
 
 debug:
   # Display the time it takes to redraw each frame.
