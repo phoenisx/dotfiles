@@ -8,7 +8,6 @@
   "workbench.editor.tabSizing": "shrink",
   "editor.wordWrap": "on",
   "editor.colorDecorators": true,
-  "workbench.activityBar.visible": true,
   "workbench.sideBar.location": "left",
   "editor.renderWhitespace": "none",
   "editor.rulers": [
@@ -53,15 +52,14 @@
 
   // https://code.visualstudio.com/docs/getstarted/settings#_language-specific-editor-settings
   "editor.insertSpaces": true,
-  "editor.tabSize": 3,
-  "[rust]": {
-    "editor.tabSize": 4,
-  },
+  // "editor.tabSize": 3,
+  // "[rust]": {
+  //   "editor.tabSize": 4,
+  // },
   "[prisma]": {
     "editor.defaultFormatter": "Prisma.prisma"
   },
   "rust-client.channel": "stable",
-  "workbench.editor.untitled.hint": "hidden",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "editor.cursorStyle": "block",
   "editor.cursorBlinking": "phase",
@@ -108,23 +106,32 @@
     "editor.defaultFormatter": "vscode.css-language-features"
   },
   "svelte.plugin.svelte.note-new-transformation": false,
-  "window.zoomLevel": 1,
   "terminal.integrated.defaultProfile.osx": "fish",
+  "editor.accessibilitySupport": "off",
   "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.tabSize": 3,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "git.openRepositoryInParentFolders": "always",
+  "window.zoomLevel": 1,
+  "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[python]": {
-    "editor.formatOnType": true
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "denoland.vscode-deno"
-  },
   "cmake.configureOnOpen": true,
-  "C_Cpp.intelliSenseEngineFallback": "enabled"
+  "C_Cpp.intelliSenseEngineFallback": "enabled",
+  "workbench.editor.empty.hint": "hidden",
+  "nxConsole.showNodeVersionOnStartup": false,
+  "workbench.editor.tabActionCloseVisibility": false,
+  "editor.lineNumbers": "relative",
+  // "editor.glyphMargin": false,
+  "editor.folding": true,
 }

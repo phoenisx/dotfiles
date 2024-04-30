@@ -18,9 +18,16 @@
     - `brew tap homebrew/cask-fonts && brew install --cask font-victor-mono-nerd-font`
     - Details here: https://gist.github.com/davidteren/898f2dcccd42d9f8680ec69a3a5d350e
 
+## Essential Rust CLI Tools:
+
+- `bat`
+- `git-delta`
+- `exa`
+- `bottom` for htop replacement
+
 ## Gotchas:
 
-- `fzf` - adds a symlink `.config/fish/functions/fzf_key_bindings.fish`, 
+- `fzf` - adds a symlink `.config/fish/functions/fzf_key_bindings.fish`,
   which right now is commited to my old directory path. This needs to change
   and should point to right location in `~/.fzf/` directory.
   Thus do make sure to install `fzf` fish shell keybindings
@@ -48,7 +55,7 @@ ln -s $HOME/personal/dotfiles/.config/omf ~/.config/omf
 ln -s $HOME/personal/dotfiles/.tmux.osx.conf ~/.tmux.conf
 
 # Symlink vim config
-ln -s $HOME/personal/dotfiles/.vim ~/.vim 
+ln -s $HOME/personal/dotfiles/.vim ~/.vim
 
 # Symlink office git config
 ln -s $HOME/personal/dotfiles/.ofc.gitconfig ~/.gitconfig

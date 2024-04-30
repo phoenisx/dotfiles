@@ -1,6 +1,7 @@
 [core]
   pager = delta
   ignorecase = false
+	editor = vim -f
 [user]
   email = subroto.biswas@postman.com
   name = Subroto
@@ -23,3 +24,5 @@
     line-numbers-minus-style = 124
     line-numbers-plus-style = 28
 
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
