@@ -131,7 +131,7 @@
   "workbench.editor.empty.hint": "hidden",
   "nxConsole.showNodeVersionOnStartup": false,
   "workbench.editor.tabActionCloseVisibility": false,
-  "editor.lineNumbers": "relative",
+  // "editor.lineNumbers": "relative",
   // "editor.glyphMargin": false,
   "editor.folding": true,
 }

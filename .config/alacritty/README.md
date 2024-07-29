@@ -1,0 +1,1 @@
+- Since alacritty v0.13 `.yml` configs are depricated
