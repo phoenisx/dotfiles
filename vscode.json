@@ -134,4 +134,9 @@
   // "editor.lineNumbers": "relative",
   // "editor.glyphMargin": false,
   "editor.folding": true,
+  "window.autoDetectColorScheme": true,
+  "workbench.preferredLightColorTheme": "Github Light",
+  "workbench.preferredDarkColorTheme": "Github Dark",
+  "gitlens.views.commitDetails.files.layout": "list",
+  "gitlens.views.searchAndCompare.files.layout": "tree"
 }
