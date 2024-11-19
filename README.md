@@ -1,20 +1,34 @@
 # Shub's Dotfiles
 
 <p align="center">
-	<img src="./images/neofetch.png" />
+	<img src="https://github.com/user-attachments/assets/825f841a-74a1-4803-8dbd-ac99f04d58df" alt="Alacritty Screenshot" />
 	<br />
 	<i>Custom Rice - <b>Heart on Flames</b></i>
 </p>
+
+I am using **fish-shell** and have moved into using `Pop_OS!` (from Manjaro).
+Experience in PopOS is much better than Manjaro, and a lot of stuff just works out of the box.
+
+Also I am using Pos OS's Tile Manager as my WM, I haven't looked into if this Time Manager config
+can be converted into a dotfile (maybe later)
+
+This repo contains my personal set of config files and repeatedly keeps on changing.
+
+My previous configs are still present in this repo, but I do not use them heavily so haven't updated
+them for quite some time now.
+
+
+<details>
+<summary>Details on these config can be read here.</summary>
+
+### You can add a header
+
+
 
 I have been troubling to setup Linux for a long time now. But recently Reddit has helped me a lot
 and the subreddit [r/unixporn](https://www.reddit.com/r/unixporn/) has inspired me to upgrade my
 Linux environment. I still have a long way to go for my setup to be complete, and totally fitting for
 my personal use.
-
-
-
-> This repo contains custom **fish-shell**, **i3** and many other confs for my persolnal setup
-> I have totally shifted to `fish` shell, and all my basic configs will be based on `fish`.
 
 ## Important Tools required:
 
@@ -61,8 +75,4 @@ my personal use.
 	- Basically I need to understand how to set up my git template.
 	- Need to understand what ctags does.
 
-
-
-
-
-
+</details>
