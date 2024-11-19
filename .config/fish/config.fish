@@ -29,6 +29,7 @@ set -gx PATH ~/go/bin/ ~/.cargo/bin (echo "$DENO_INSTALL/bin") /opt/homebrew/bin
 switch (uname)
 case Linux
   # Do nothing for now
+  set -gx PATH "$HOME/.local/bin/"  $PATH
 case Darwin
  set -gx PATH "$(pyenv root)/shims" $PATH
  set -gx PATH "$HOME/Library/Python/3.10/bin/" $PATH
@@ -80,11 +81,17 @@ set -gx PNPM_HOME "/Users/shub/Library/pnpm"
 set -gx PATH "$PNPM_HOME" $PATH
 # pnpm end
 
-set PYENV_VIRTUALENV (pyenv root)/plugins/pyenv-virtualenv
-#######
-# test if pyenv-virtualenv is cloned into default directory.
-#######
-if test -d $PYENV_VIRTUALENV
-  and type -q pyenv
-  status --is-interactive; and pyenv virtualenv-init - | source
+if type -q pyenv
+  set PYENV_VIRTUALENV (pyenv root)/plugins/pyenv-virtualenv
+  #######
+  # test if pyenv-virtualenv is cloned into default directory.
+  #######
+  if test -d $PYENV_VIRTUALENV
+    and type -q pyenv
+    status --is-interactive; and pyenv virtualenv-init - | source
+  end
+end
+
+if type -q task
+    task --completion fish | source
 end

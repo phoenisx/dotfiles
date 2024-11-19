@@ -1,5 +1,5 @@
 {
-  "editor.fontFamily": "VictorMono Nerd Font Mono, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "VictorMono Nerd Font, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 14,
   "editor.fontWeight": "600",
@@ -47,9 +47,8 @@
     "other": true,
     "comments": false,
     "strings": false,
-    "markdown": true
+    // "markdown": true
   },
-
   // https://code.visualstudio.com/docs/getstarted/settings#_language-specific-editor-settings
   "editor.insertSpaces": true,
   // "editor.tabSize": 3,
@@ -86,7 +85,7 @@
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
   },
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "symbols",
   "redhat.telemetry.enabled": false,
   "[postcss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -99,9 +98,6 @@
   "[scss]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "grammarly.files.include": [
-    "content/**/*.md"
-  ],
   "[css]": {
     "editor.defaultFormatter": "vscode.css-language-features"
   },
@@ -111,20 +107,16 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "editor.tabSize": 3,
   "[python]": {
     "editor.formatOnType": true
   },
-  "git.openRepositoryInParentFolders": "always",
   "window.zoomLevel": 1,
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[markdown]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "[jsonc]": {
+    "editor.defaultFormatter": "denoland.vscode-deno"
   },
   "cmake.configureOnOpen": true,
   "C_Cpp.intelliSenseEngineFallback": "enabled",
@@ -135,8 +127,26 @@
   // "editor.glyphMargin": false,
   "editor.folding": true,
   "window.autoDetectColorScheme": true,
-  "workbench.preferredLightColorTheme": "Github Light",
   "workbench.preferredDarkColorTheme": "Github Dark",
   "gitlens.views.commitDetails.files.layout": "list",
-  "gitlens.views.searchAndCompare.files.layout": "tree"
+  "gitlens.views.searchAndCompare.files.layout": "tree",
+  "symbols.hidesExplorerArrows": false,
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "workbench.colorTheme": "Atom One Light",
+  "files.autoSave": "off",
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "git.openRepositoryInParentFolders": "never",
+  // "typescript.inlayHints.variableTypes.enabled": true,
+  // "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
+  // "javascript.inlayHints.parameterTypes.enabled": true,
+  // "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
+  // "javascript.inlayHints.variableTypes.enabled": true,
+  // "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  // "typescript.inlayHints.parameterTypes.enabled": true,
+  // "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
 }
