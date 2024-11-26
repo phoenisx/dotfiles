@@ -7,6 +7,7 @@
 - `brew install`
     - pyenv
     - fish
+      - Follow this to set fish as default shell in some cases: https://github.com/fish-shell/fish-shell/issues/989 
     - neofetch
     - fzf
         - Should also install key_bindings: `$(brew --prefix)/opt/fzf/install`
@@ -46,7 +47,7 @@ rm -rf ~/.config/neofetch/
 ln -s $HOME/personal/dotfiles/.config/neofetch/ ~/.config/neofetch
 
 # Symlink Alacritty config
-ln -s $HOME/personal/dotfiles/.config/alacritty/ ~/.config/alacritty
+ln -s $HOME/personal/dotfiles/.config/alacritty/alacritty.ofc.toml ~/.config/alacritty/alacritty.toml
 
 # Symlink OMF conf
 ln -s $HOME/personal/dotfiles/.config/omf ~/.config/omf
