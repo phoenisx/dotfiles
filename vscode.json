@@ -141,6 +141,7 @@
     "workbench.action.tasks.runTask"
   ],
   "git.openRepositoryInParentFolders": "never",
+  "workbench.preferredLightColorTheme": "Atom One Light",
   // "typescript.inlayHints.variableTypes.enabled": true,
   // "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
   // "javascript.inlayHints.parameterTypes.enabled": true,
