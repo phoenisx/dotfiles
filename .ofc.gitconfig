@@ -2,9 +2,8 @@
   pager = delta
   ignorecase = false
 	editor = vim -f
-[user]
-  email = subroto.biswas@deel.com
-  name = subroto-biswas-deel
+[include]
+  path = ~/.gitconfig-local
 [interactive]
   diffFilter = delta --color-only
 [delta]
@@ -26,3 +25,23 @@
 
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
+
+# Details: https://git-scm.com/docs/git-config#Documentation/git-config.txt-codegitdircode
+# `~/personal/` has to be a git repository. Even fake repository works
+# Much better example: https://nicknisi.com/posts/git-includeif/
+
+###
+# Example:
+#
+# # inside of ~/.gitconfig-local
+# [includeIf "gitdir:~/work/"]
+#   path = ~/.gitconfig-work
+# [includeIf "gitdir:~/oss/"]
+#   path = ~/.gitconfig-oss
+#
+# # inside ~/.gitconfig-oss
+# [user]
+#     email = "id@mail.com"
+#     name = Phoenix
+# [core]
+#     sshCommand = "ssh -i ~/.ssh/oss_key"

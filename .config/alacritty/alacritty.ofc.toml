@@ -665,10 +665,11 @@ program = "/opt/homebrew/bin/fish"
 
 [window]
 dynamic_title = true
-decorations = "full"
+decorations = "None"
 dynamic_padding = false
-opacity = 0.98
-startup_mode = "Maximized"
+opacity = 0.80
+blur = true
+startup_mode = "Windowed"
 
 [window.dimensions]
 columns = 0
