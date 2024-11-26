@@ -12,6 +12,10 @@
     - fzf
         - Should also install key_bindings: `$(brew --prefix)/opt/fzf/install`
     - tmux
+      - Tmux plugins need more setup
+      - `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+      - Press prefix + I (capital i, as in Install) to fetch the plugin.
+      - Read more details here: https://github.com/tmux-plugins/tpm
 - `curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish`
     - `omf install budspencer`
 - `git clone` this repo
