@@ -1,3 +1,4 @@
+[general]
 import = ["~/.config/alacritty/themes/themes/nordic.toml"] # Dark
 # import = ["~/.config/alacritty/themes/themes/nord_light.toml"]
 

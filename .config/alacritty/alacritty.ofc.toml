@@ -1,3 +1,4 @@
+[general]
 working_directory = "None"
 live_config_reload = true
 
@@ -658,7 +659,7 @@ multiplier = 3
 save_to_clipboard = false
 semantic_escape_chars = ''',│`|:"' ()[]{}<>'''
 
-[shell]
+[terminal.shell]
 args = ["-l", "-c", "tmux new -As0"]
 program = "/opt/homebrew/bin/fish"
 

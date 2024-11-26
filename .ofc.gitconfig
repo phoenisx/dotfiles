@@ -3,8 +3,8 @@
   ignorecase = false
 	editor = vim -f
 [user]
-  email = subroto.biswas@postman.com
-  name = Subroto
+  email = subroto.biswas@deel.com
+  name = subroto-biswas-deel
 [interactive]
   diffFilter = delta --color-only
 [delta]
