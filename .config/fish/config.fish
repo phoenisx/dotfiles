@@ -24,7 +24,7 @@ set -g theme_nerd_fonts yes
 if type -q brew
   set -gx NVM_DIR (brew --prefix nvm)
 end
-set -gx PATH ~/go/bin/ ~/.cargo/bin (echo "$DENO_INSTALL/bin") /opt/homebrew/bin/ /usr/local/bin $PATH
+set -gx PATH ~/.rd/bin ~/go/bin/ ~/.cargo/bin (echo "$DENO_INSTALL/bin") /opt/homebrew/bin/ /usr/local/bin $PATH
 
 switch (uname)
 case Linux

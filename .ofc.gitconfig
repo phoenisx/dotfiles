@@ -26,6 +26,10 @@
 [url "ssh://git@github.com/"]
 	insteadOf = https://github.com/
 
+# https://stackoverflow.com/a/26438076
+[push]
+  followTags = true
+
 # Details: https://git-scm.com/docs/git-config#Documentation/git-config.txt-codegitdircode
 # `~/personal/` has to be a git repository. Even fake repository works
 # Much better example: https://nicknisi.com/posts/git-includeif/

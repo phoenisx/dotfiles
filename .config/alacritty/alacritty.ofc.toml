@@ -667,7 +667,7 @@ program = "/opt/homebrew/bin/fish"
 dynamic_title = true
 decorations = "None"
 dynamic_padding = false
-opacity = 0.80
+opacity = 0.88
 blur = true
 startup_mode = "Windowed"
 

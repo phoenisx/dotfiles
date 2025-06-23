@@ -1,18 +1,19 @@
 {
   "editor.fontFamily": "VictorMono Nerd Font, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
-  "editor.fontSize": 14,
+  "window.zoomLevel": 0.5,
+  "editor.fontSize": 16,
+  "workbench.list.horizontalScrolling": true,
   "editor.fontWeight": "600",
   "editor.lineHeight": 20,
   "editor.letterSpacing": 0,
-  "workbench.editor.tabSizing": "shrink",
   "editor.wordWrap": "on",
   "editor.colorDecorators": true,
   "workbench.sideBar.location": "left",
   "editor.renderWhitespace": "none",
   "editor.rulers": [
-    100,
-    120
+    120,
+    150
   ],
   "workbench.startupEditor": "none",
   "extensions.ignoreRecommendations": false,
@@ -111,7 +112,6 @@
   "[python]": {
     "editor.formatOnType": true
   },
-  "window.zoomLevel": 1,
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -141,6 +141,9 @@
     "workbench.action.tasks.runTask"
   ],
   "git.openRepositoryInParentFolders": "never",
+  "jest.debugMode": true,
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.wrapTabs": false,
   "workbench.preferredLightColorTheme": "Atom One Light",
   // "typescript.inlayHints.variableTypes.enabled": true,
   // "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
@@ -150,4 +153,22 @@
   // "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
   // "typescript.inlayHints.parameterTypes.enabled": true,
   // "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+
+  // Required to install extensions on proffesional laptops behind VPN
+  // Ref: https://stackoverflow.com/questions/36506539/how-do-i-get-visual-studio-code-to-trust-our-self-signed-proxy-certificate
+  // https://github.com/Microsoft/vscode/issues/3492
+  // Somehow it didn't work for me, and I had to disable VPN to make it work
+  // "http.proxyStrictSSL": true,
+
+  // Following is a hack, and should be removed, once these issues are resolved:
+  // https://github.com/microsoft/vscode/issues/235959#issuecomment-2644217357
+  // https://github.com/microsoft/vscode/issues/236625#event-16230959334
+  "typescript.updateImportsOnPaste.enabled": false,
+  "javascript.updateImportsOnPaste.enabled": false,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  }
 }
