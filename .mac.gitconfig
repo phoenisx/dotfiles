@@ -8,11 +8,11 @@
 [interactive]
   diffFilter = delta --color-only
 [delta]
-  syntax-theme = Monokai Extende
-  features = side-by-side line-numbers decorations
-  whitespace-error-style = 22 reverse
-  plus-style = syntax "#4a503d"
-  minus-style = syntax "#845460"
+    syntax-theme = Monokai Extended
+    features = side-by-side line-numbers decorations
+    whitespace-error-style = 22 reverse
+    plus-style = syntax "#4a503d"
+    minus-style = syntax "#845460"
 [delta "decorations"]
     commit-decoration-style = bold yellow box ul
     file-style = bold yellow ul
