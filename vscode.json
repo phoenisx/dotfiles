@@ -1,20 +1,17 @@
 {
-  "editor.fontFamily": "VictorMono Nerd Font, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Lilex, Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "window.zoomLevel": 0.5,
-  "editor.fontSize": 16,
+  "editor.fontSize": 15,
   "workbench.list.horizontalScrolling": true,
-  "editor.fontWeight": "600",
-  "editor.lineHeight": 20,
+  "editor.fontWeight": 400,
+  "editor.lineHeight": 24,
   "editor.letterSpacing": 0,
   "editor.wordWrap": "on",
   "editor.colorDecorators": true,
   "workbench.sideBar.location": "left",
   "editor.renderWhitespace": "none",
-  "editor.rulers": [
-    120,
-    150
-  ],
+  "editor.rulers": [120, 150],
   "workbench.startupEditor": "none",
   "extensions.ignoreRecommendations": false,
   "files.exclude": {
@@ -23,7 +20,11 @@
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "**/.next": true
+    "**/.next": true,
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "packages/*/node_modules": true
   },
   "workbench.editor.tabCloseButton": "off",
   "editor.snippetSuggestions": "top",
@@ -35,7 +36,7 @@
     "suppressFileNotUnderSourceControlWarning": false,
     "suppressGitVersionWarning": false,
     "suppressLineUncommittedWarning": false,
-    "suppressNoRepositoryWarning": false,
+    "suppressNoRepositoryWarning": false
   },
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
@@ -47,7 +48,7 @@
   "editor.quickSuggestions": {
     "other": true,
     "comments": false,
-    "strings": false,
+    "strings": false
     // "markdown": true
   },
   // https://code.visualstudio.com/docs/getstarted/settings#_language-specific-editor-settings
@@ -127,7 +128,8 @@
   // "editor.glyphMargin": false,
   "editor.folding": true,
   "window.autoDetectColorScheme": true,
-  "workbench.preferredDarkColorTheme": "Github Dark",
+  "workbench.preferredDarkColorTheme": "Atom One Dark",
+  "workbench.preferredLightColorTheme": "Atom One Light",
   "gitlens.views.commitDetails.files.layout": "list",
   "gitlens.views.searchAndCompare.files.layout": "tree",
   "symbols.hidesExplorerArrows": false,
@@ -144,7 +146,6 @@
   "jest.debugMode": true,
   "workbench.editor.labelFormat": "short",
   "workbench.editor.wrapTabs": false,
-  "workbench.preferredLightColorTheme": "Atom One Light",
   // "typescript.inlayHints.variableTypes.enabled": true,
   // "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
   // "javascript.inlayHints.parameterTypes.enabled": true,
@@ -170,5 +171,26 @@
     "plaintext": false,
     "markdown": false,
     "scminput": false
+  },
+  "typescript.experimental.expandableHover": true,
+  "typescript.tsserver.maxTsServerMemory": 8192,
+  "typescript.tsserver.nodePath": "~/.local/share/nvm/v22.17.0/bin/node",
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/build/**": true,
+    "**/coverage/**": true,
+    "**/app/src/i18n/**": true
+  },
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   }
 }
