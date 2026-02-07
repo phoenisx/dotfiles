@@ -31,6 +31,7 @@ case Linux
   # Do nothing for now
   set -gx PATH "$HOME/.local/bin/"  $PATH
 case Darwin
+ set -gx PATH "$HOME/.local/bin/"  $PATH
  set -gx PATH "$(pyenv root)/shims" $PATH
  set -gx PATH "$HOME/Library/Python/3.10/bin/" $PATH
  set -gx PATH "$HOME/3rd-party/depot_tools"  $PATH
@@ -47,6 +48,10 @@ end
 if test -e ~/.deno
   set -gx DENO_INSTALL "$HOME/.deno"
   set -gx PATH "$DENO_INSTALL/bin/" $PATH
+end
+
+if test -e /Applications/WebStorm.app/Contents/MacOS
+  set -gx PATH "/Applications/WebStorm.app/Contents/MacOS" $PATH
 end
 
 ################
@@ -94,4 +99,17 @@ end
 
 if type -q task
     task --completion fish | source
+end
+
+# The following is only for MacOS and only if it has a custom LLVM version installed
+# Recommended and needed for llv v21+, if Apple llvm is odlder than 21
+# Currently Apple ships with older llvm, with clang 17 support for c++17
+# I wanted to use c++23, which is installed using `brew` and setup using the following env variables.
+# `brew install llvm` && `brew install `lld`
+if type -q brew && test -e "$(brew --prefix llvm)"
+   echo "Setting new Path $(brew --prefix llvm)/bin"
+   set -gx PATH "$(brew --prefix llvm)/bin" $PATH
+   set -gx LDFLAGS "-L$(brew --prefix llvm)/lib"
+   set -gx CPPFLAGS "-I$(brew --prefix llvm)/include"
+   set -gx CMAKE_PREFIX_PATH "$(brew --prefix llvm)"
 end
